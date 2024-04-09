@@ -1,0 +1,5 @@
+- Pivot
+- O(n^2) in worst case [Pivot is on the edges]
+- O(Nlog N) in average case
+- Choose Pivot and then quick Sort and then merge as is.
+- HW : USE TWO PIVOTS, TIME COMPLEXITY

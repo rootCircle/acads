@@ -1,0 +1,2 @@
+- Encoding $\Delta$ to set of quantised values,rather than 0, 1 (Refer [[Delta Modulation]] )
+- Quantization error is lesser than Pulse Code Modulation.

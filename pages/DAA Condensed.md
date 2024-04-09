@@ -1,0 +1,16 @@
+- DP
+	- Memorization
+	- Tabulation Iterative
+	- All pair sorted
+		- row column same and then find route via i
+	- Matrix Chain Multiplication
+		- Cost of multiplication (m,p) (p,n) = m*p*n
+		- ![image.png](../assets/image_1701196378552_0.png)
+		- ![image.png](../assets/image_1701196928009_0.png)
+	- Bellman Ford (Single Source shortest path | work for negative weights too)
+		- Fails in negative weight cycle
+		- Relax = V-1 times and calculate wt with taking all edges
+	- ![image.png](../assets/image_1701204368134_0.png)
+	-
+- ![image.png](../assets/image_1701193441243_0.png)
+-

@@ -1,0 +1,29 @@
+### Delta Modulation
+	- Diff in Pulse 1 -> +ve, 0 -> -ve
+- ![image.png](../assets/image_1701386919116_0.png)
+- ### Transmission
+	- Parallel: All bit at once
+	- Serial: Isochronous(even gap btwn frames), Sync(frames), async(start and end flag with gap)
+- Digital to Analog
+	- Amplitude Shift Key: 1 change, 0 no change
+		- B = (1+d)S             S=Sampling Rate
+	- Frequency Shift Key
+		- 1 -> +ve f, 0 -> -ve freq from f_{c}
+		- B = (1+d)xS +2Δf
+		- B = (1+d)xS + (L-1)/2 Δf = LxS
+		- Coherent = Respect phase
+	- Phase Shift Key
+		- B = (1+d)S
+	- ![image.png](../assets/image_1701384039613_0.png)
+	- Baud rate = No of signal elements/sec = S = N/r (N=bitrate, r = no of data bit per segment)
+- Analog to Analog
+	- Amplitude, freq, phase modulation
+	- B_{AM} = 2B
+	- ![image.png](../assets/image_1701385514507_0.png)
+	- ![image.png](../assets/image_1701385714018_0.png)
+	- ![image.png](../assets/image_1701385840569_0.png)
+		- NRZ-L and NRZ-I both have an average signal rate of N/2 Bd
+		- The minimum bandwidth of Manchester and differential Manchester is 2 times that of NRZ
+		- ![image.png](../assets/image_1701394897643_0.png)
+		- ![image.png](../assets/image_1701395454428_0.png)
+		- mB/nB

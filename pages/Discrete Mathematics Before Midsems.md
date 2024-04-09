@@ -1,0 +1,17 @@
+- Power Set of *finite* set only.
+- No of Power set = $2^{n}$
+- Cartesian Product = m*n
+- Relations = $2^{m*n}$
+- Identity = Diagonal Relationship
+- Reflexive Relation  = $2^{n^2-n}$
+- Irreflexive Relation = Doesn't contains any of (x, x) [Not reflexive doesn't imply irreflexive]
+- Symmetric = xRy => yRx
+- Antisymmetric = xRy => yRx iff x = y (eg <=)
+- Asymmetric = xRy it means yRx does not exist
+- Transitive = xRy and yRz => xRz
+- Equivalence = Reflexive + Symmetric + Transitive
+- Partial Ordering Relation (Composite) = Reflexive + Anti symmetric + Transitive
+- POSET (Partially ordering Set) = [A;R] (A=Set, R=Partial ordering Relation)
+- Totally Ordered Set(TOS) is a POSET in which every pair of element is comparable i.e. aRb or bRa
+- {{video https://www.youtube.com/watch?v=kSKmoNnXmHM&list=PLxCzCOWd7aiH2wwES9vPWsEL6ipTaUSl3&index=15}}
+-
