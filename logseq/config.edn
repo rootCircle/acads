@@ -413,4 +413,5 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :graph/settings {:journal? false
- :excluded-pages? true}}
+ :excluded-pages? true}
+ :publishing/all-pages-public? true}
