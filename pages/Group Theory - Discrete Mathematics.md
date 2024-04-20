@@ -11,7 +11,7 @@
 - Addition Modulo
 	- $5+ _{2}5$ = (5 + 5) % 2
 - Multiplication Modulo
-	- $3 *_{2} 5 = (3*5) % 2$
+	- $3 *_{2} 5 = (3*5) \% 2$
 - Caley's Table (XoY)
 - ![image.png](../assets/image_1708448683983_0.png)
 - ![image.png](../assets/image_1709071571359_0.png)
