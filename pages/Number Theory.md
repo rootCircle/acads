@@ -29,5 +29,5 @@
 	- ### Euler's Theorem
 		- Every positive integer a & n and are relatively prime, then
 			- $a^{\Phi(n)} \equiv\ 1\ mod\ n$
-			-
+			- https://www.youtube.com/watch?v=DyOv20d4c70&list=PLBlnK6fEyqRjjeHdm0cwu6E-nhhEluuVA&index=13
 -
