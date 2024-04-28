@@ -172,11 +172,13 @@
 		- Flow Control (Controlling bitrate of data based on bandwidth constraint of latter device)
 		- Error Control (ARQ)
 		- Process to Process communication
-	-
+	- Network Socket : IP + Port
 	- ## TCP
+	  id:: 662a439b-d867-4150-861e-f7952102946b
 		- Full duplex mode (dual channel communication)
 		- Buffers are allocated at sender and receiver using Window SIze (buffer size)
 		- Seq = Current seq no. of sender
+		- ((662e405d-9b2e-4f8a-8675-08cb35d52022))
 		- ### Initiating Connection
 			- Minimum of MSS(Maximum Segment Size) of both will be selected. Same for Window Size.
 			- ![image.png](../assets/image_1708687811466_0.png){:height 245, :width 370}
