@@ -190,7 +190,7 @@
 			- SYN = 0 and ACK = 1 in during data transfer
 			- ![image.png](../assets/image_1708688351738_0.png)
 		- ### Terminating Connection
-			- Min 3 and max 4 packet are required
+			- Min 3 and max 4 packet are required (both need to send FIN & ACK)
 			- FIN bit = 1 & ACK = 1
 		- ![image.png](../assets/image_1708692389348_0.png)
 			- Length = 4 * Data offset
