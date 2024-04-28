@@ -163,15 +163,16 @@
 			- Next Header : Transport Layer protocol / Extension header info
 			- Hop Limit = TTL
 			- ![image.png](../assets/image_1709239923628_0.png){:height 280, :width 450}
-			-
 - # Transport Layer
 	- ![image.png](../assets/image_1708683233394_0.png)
 	- Form Segments (small) from Data (large)
+	- Segments store sequence number and port number of data.
 	- Functions
 		- Segmentation
 		- Flow Control (Controlling bitrate of data based on bandwidth constraint of latter device)
 		- Error Control (ARQ)
 		- Process to Process communication
+	-
 	- ## TCP
 		- Full duplex mode (dual channel communication)
 		- Buffers are allocated at sender and receiver using Window SIze (buffer size)
