@@ -66,15 +66,52 @@
 		- Stages
 			- Slow start phase
 			  logseq.order-list-type:: number
-				- Congestion Window(Wc) = 1 or 2 initially and will grow by _x_ 2 till threshold
+				- _Congestion Window(Wc)_ = 1 or 2 initially and will grow by _x_ 2 till threshold
 			- Congestion Avoidance phase
 			  logseq.order-list-type:: number
 				- Congestion Window increase by _+_ 1, if no congestion
 			- Continuously Congestion Avoidance phase
 			  logseq.order-list-type:: number
-				- Timeouts
+				- Timeouts (Severe congestion)
 				  logseq.order-list-type:: number
-					- Wth = Wc/2 and slow start
-				- 3 Duapack
+					- _Wth(threshold value)_ = Wc/2 and slow start
+				- 3 Duapack (Mild congestion)
 				  logseq.order-list-type:: number
 					- Wth = Wc/2 and congestion avoidance
+			- ![image.png](../assets/image_1714380662623_0.png){:height 276, :width 528}
+				- Wth = Wr / 2 = 64 / 2 = 32
+				- Roundtrip time to reach Wr = log2 (Wth) + 1 + Wth
+			- After SYN, Window Size(sender) = min (Receiver Window Size, Wc)
+	- ### Timers
+		- #### Time-wait timers
+			- Delayed segments received by the receiver
+		- #### Persistent Timer
+			- Stop sending data for fixed time after receiver window is full
+		- #### Keep Aliver Timer
+			- Close Idle connection, server sent probe frames after keep alive time to check if client is idle or not
+		- #### Acknowledgement Timer
+			- Sends cummulative ACK of all packets after ACK timer times out!
+		- #### Timeout Timer
+			- For retransmission of data after timeout if its ACK is not received
+			- Based dynamically on network params like traffic, bandwidth etc
+			- ##### Basic Algortihm for Timeout timers
+				- Assume Initial Round Trip Time (IRTT)
+				  logseq.order-list-type:: number
+				- Timeout Timer $$T_o$$ = 2 IRTT
+				  logseq.order-list-type:: number
+				- Observe Actual Round Trip Time (ARTT)
+				  logseq.order-list-type:: number
+					- New Round Trip Time (NRTT) = \alpha IRTT + (1- \alpha) ARTT
+					  logseq.order-list-type:: number
+					- \alpha is smoothing factor
+					  logseq.order-list-type:: number
+					- $T_o$ = 2 NRTT
+					  logseq.order-list-type:: number
+					- IRTT = NRTT of previous segment 
+					  logseq.order-list-type:: number
+	- ### Silly Window Syndrome
+		- Due to ineffective utilization of resources (
+			- Window size is full,
+			- Slower Sender
+			- SloweReceiver)
+		-
