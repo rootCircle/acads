@@ -131,6 +131,44 @@
 			- Max average rate = (C + rt)/t
 			- ![image.png](../assets/image_1714397304944_0.png){:height 329, :width 276}
 			- Data is pushed equal to the Buffer Capacity out of the bucket
+	- $Bandwidth = Data /{Round\ trip\ time}$
 - ## UDP
 	- ((662a439b-7ccd-4755-8b35-6b5bae6899ed))
--
+- # Application Layer
+	- ## DNS
+		- Store IP, domain name & Validity/TTL (time to live)
+		- UDP Protocol
+		- Domain name - Generic name(com, org) & Country domain
+		- Root Domain(.) -> Top level Domain -> Second level Domain -> Subdomain
+		- Root DNS -> Name Server (TLDs) -> Host Server
+		- Address Resolution
+			- Iterative : First hit Root DNS, then get the Name Server and hit it and similarly Host Server
+			- Recursive : Same as Itertive, but instead of client hitting the next the Root hits the Name server and name server hits the host server in recursive fashion
+	- ## SMTP, POP, IMAP
+		- ![image.png](../assets/image_1714416721811_0.png)
+		- MSA : Mail Submission Agent ; MTA = Transfer ; MDA = Delivery
+		- POP deletes the message from the mailbox after sending it to user, while IMAP doesn't
+		- ![image.png](../assets/image_1714416890908_0.png)
+	- ## HTTP/HTTPS
+		- Usually TCP; Port 80
+		- Server stateless; Client stateful (using cookie to know about server etc)
+		- In band Protocol : Command and Data on same connection
+		- Types of HTTP
+			- HTTP 1.0
+				- Non persistent connection; for each request response transaction a TCP connection is established
+				- Simple, predictible resource usage, high overhead and latency
+			- HTTP 1.1
+				- Persistent connection; TCP connection is not closed after connection is ended.
+		- ### HTTP Methods
+			- GET
+			- HEAD : GET for headers
+			- POST : fill forms
+			- PUT : upload objects/files
+			- DELETE : delete object/files
+			- CONNECT : Used by HTTPS to secure connection
+			- OPTIONS : To query available communication options for a URL
+			- TRACE : See intermediate nodes interpreting the request
+			- PATCH : Apply partial modification to resource
+	- ## FTP, SPTF & TFTP
+		-
+		-
