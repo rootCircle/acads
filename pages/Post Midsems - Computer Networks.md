@@ -148,6 +148,7 @@
 		- ![image.png](../assets/image_1714416721811_0.png)
 		- MSA : Mail Submission Agent ; MTA = Transfer ; MDA = Delivery
 		- POP deletes the message from the mailbox after sending it to user, while IMAP doesn't
+		- POP : stateful
 		- ![image.png](../assets/image_1714416890908_0.png)
 	- ## HTTP/HTTPS
 		- Usually TCP; Port 80
@@ -170,5 +171,17 @@
 			- TRACE : See intermediate nodes interpreting the request
 			- PATCH : Apply partial modification to resource
 	- ## FTP, SPTF & TFTP
+		- ### FTP (port 21)
+			- Two channel - Data & Commands (Out of band protocol)
+			- TCP; auth; no encryption; stateful
+		- ### SFTP - SSH FTP (port 22)
+			- Single channel for data & commands (In Band protocol)
+			- TCP; auth; encrypted
+		- ### TFTP - Trivial FTP (port 69)
+			- UDP; no auth; not internet but LAN tranfers
+		- ![image.png](../assets/image_1714420552833_0.png){:height 281, :width 291}
+			- PASV for initiation/auth
+		-
+			-
 		-
 		-
