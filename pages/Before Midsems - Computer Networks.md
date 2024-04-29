@@ -163,6 +163,11 @@
 			- Next Header : Transport Layer protocol / Extension header info
 			- Hop Limit = TTL
 			- ![image.png](../assets/image_1709239923628_0.png){:height 280, :width 450}
+			- Global Address => 2000::/3
+			- Multicast Address => FF00::/8
+			- Link local Address => FF80::/10
+			- Site local Address => FFC0::/10
+			- Loopback Address => ::1
 - # Transport Layer
 	- ![image.png](../assets/image_1708683233394_0.png)
 	- Form Segments (small) from Data (large)
@@ -197,8 +202,11 @@
 			- Min length = 20B to 60B
 			- MSS(Maximum Segment Size) is stored in options
 	- ## UDP (User Datagram Protocol)
+	  id:: 662a439b-7ccd-4755-8b35-6b5bae6899ed
+		- Message stream(Sent in chunks)
 		- Speed over reliability.
 		- Preferred for unreliable Multicasting & Broadcasting.
+		- Protocols like DNS, BOOTP, DHCP, OSPF which require fewer packets
 		- ![image.png](../assets/image_1708691870697_0.png)
 		- Port
 			- 0 to 2^16 -1
@@ -208,5 +216,6 @@
 			- SMTP (25), FTP(21), TELNET(23)
 		- Max Length = 2^16 - 1
 		- Header = 8 bytes & Data 64KB - 8B
-		- Checksum (CRC) = Disabled by all 1s
+		- Checksum (CRC -> Data, Header, Pseudo Header)
+			- Disabled by all 1s
 	-

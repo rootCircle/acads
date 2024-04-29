@@ -2,6 +2,7 @@
 - ## TCP [contd]
   id:: 662e405d-9b2e-4f8a-8675-08cb35d52022
 	- ### TCP Header
+		- Byte stream not message stream (multiple messages sent in continuation)
 		- #### Sequence No. (32 bits)
 			- ID of first byte of segment
 			- Sent from source sending the data
@@ -81,6 +82,7 @@
 			- ![image.png](../assets/image_1714380662623_0.png){:height 276, :width 528}
 				- Wth = Wr / 2 = 64 / 2 = 32
 				- Roundtrip time to reach Wr = log2 (Wth) + 1 + Wth
+				- ![image.png](../assets/image_1714410584070_0.png){:height 332, :width 464}
 			- After SYN, Window Size(sender) = min (Receiver Window Size, Wc)
 	- ### Timers
 		- #### Time-wait timers
@@ -110,8 +112,25 @@
 					- IRTT = NRTT of previous segment 
 					  logseq.order-list-type:: number
 	- ### Silly Window Syndrome
-		- Due to ineffective utilization of resources (
-			- Window size is full,
-			- Slower Sender
-			- SloweReceiver)
-		-
+		- Due to ineffective utilization of resources
+			- Window size is full : Reset the connection, as bandwidth wasted till persistent timer
+			- Slower Sender : When Sender is sending in very small chunks. Wait for Round Trip Time(RTT) as per Naggle's Algo for more data accumulation.
+			- Slower Receiver : Receiver is unable free window buffer at faster pace and hence smaller chunks from sender. Use clark's soln which says to don't send ACK till MSS or 0.5 buffer size is free.
+	- ### Congestion Control
+		- #### Traffic Shaping
+			- Make Rate of data transfer constant
+			- Data rate negotiation is done at connection initiation using Option Field
+		- #### Leaky Bucket
+			- Add data to buffer at any rate(from application layer), but output at constant rate only!
+			- Waste of bandwidth if no data.
+			- If overflow then discard!
+		- #### Token Bucket
+			- Same as Leaky Bucket, but add token even if no data inflow happen!
+			- Buffer Capacity C > Tokens in Bucket
+			- Max no. of packets in sec = C + rt
+			- Max average rate = (C + rt)/t
+			- ![image.png](../assets/image_1714397304944_0.png){:height 329, :width 276}
+			- Data is pushed equal to the Buffer Capacity out of the bucket
+- ## UDP
+	- ((662a439b-7ccd-4755-8b35-6b5bae6899ed))
+-
