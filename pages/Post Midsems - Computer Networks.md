@@ -41,6 +41,40 @@
 	- ### Flow control
 		- Control transfer speed
 			- Window Scaling
+				- Common Window size in during connection establishment in TCP
 			- Advertisement Window Size
+				- During transmission of data, receiver will advertise its window size to sender continuously to prevent over transmission in case of full buffer.
 			- Persistent Timer
-		-
+				- After some persistant time, sender can send PROBE frame to receiver to check if its buffer is still full or has empty space, to restart transmitting data.
+			- ![image.png](../assets/image_1714363872681_0.png){:height 386, :width 498}
+	- ### Sliding Window Protocol
+		- #### Hybrid Sliding Window Protocol
+			- ##### Selective Repeat
+				- Sender Window Size = Receiver Window Size
+				- Accepts out of order segment (waiting for seq=101, but can accept 150th too if window size allows)
+			- ##### Go Back N
+				- Sending acummulative acknowledgements, of multiple packets at once.
+	- ### Retransmission in TCP
+		- #### Timeout based
+			- Resend packet after timeout if ACK not received for it.
+		- #### Dupack or Early retransmission
+			- Before transmission, on receiving _three duplicate_ ACK for a segment
+	- ### Congestion Control
+		- Network Layer - ICMP (Router to Router)
+		- Transport Layer - TCP (Entire end to end network)
+		- By scaling window size (lower Window size lesser the data transferred)
+		- Stages
+			- Slow start phase
+			  logseq.order-list-type:: number
+				- Congestion Window(Wc) = 1 or 2 initially and will grow by _x_ 2 till threshold
+			- Congestion Avoidance phase
+			  logseq.order-list-type:: number
+				- Congestion Window increase by _+_ 1, if no congestion
+			- Continuously Congestion Avoidance phase
+			  logseq.order-list-type:: number
+				- Timeouts
+				  logseq.order-list-type:: number
+					- Wth = Wc/2 and slow start
+				- 3 Duapack
+				  logseq.order-list-type:: number
+					- Wth = Wc/2 and congestion avoidance
