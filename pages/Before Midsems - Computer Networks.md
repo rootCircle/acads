@@ -8,7 +8,7 @@
 		- Fragmentation
 			- Restructure of frame formation due to varying data frame length as defined by various LAN like WLAN(2301), Ethernet(1500 bytes), Token Ring LAN(4500 bytes) etc
 	- MAC (48 bits)
-	- ![image.png](../assets/image_1708503288142_0.png){:height 345, :width 620}
+	- ![image.png](../assets/image_1708503288142_0.png){:height 356, :width 620}
 		- Network ID can't be all 0 or all 1(s) _only_ for Class A
 		- |Class|MSB|
 		  |--|--|
