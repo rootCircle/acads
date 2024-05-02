@@ -29,5 +29,9 @@
 	- ### Euler's Theorem
 		- Every positive integer a & n and are relatively prime, then
 			- $a^{\Phi(n)} \equiv\ 1\ mod\ n$
-			- https://www.youtube.com/watch?v=DyOv20d4c70&list=PLBlnK6fEyqRjjeHdm0cwu6E-nhhEluuVA&index=13
+	- ### Primitive Root
+		- a is said to be primitive root of prime number p if a mod p, $$a^2$$ mod p .... $a^{p-1}$ mod p are distinct.
+	- ### Multiplicate Inverse
+		- ![image.png](../assets/image_1714675325084_0.png){:height 189, :width 227}
+		-
 -
