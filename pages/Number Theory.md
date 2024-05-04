@@ -32,6 +32,26 @@
 	- ### Primitive Root
 		- a is said to be primitive root of prime number p if a mod p, $$a^2$$ mod p .... $a^{p-1}$ mod p are distinct.
 	- ### Multiplicate Inverse
+		- Only if both number are relatively co-prime
 		- ![image.png](../assets/image_1714675325084_0.png){:height 189, :width 227}
-		-
--
+		- ### Using extended euclidean algorithm
+			- ![image.png](../assets/image_1714828535080_0.png)
+			- ![image.png](../assets/image_1714828760651_0.png)
+- ## Chinese Remainder Theorem
+	- X \cong $a_1$ mod $m_1$
+	  X \cong $a_2$ mod $m_2$
+	  ...
+	  X \cong $a_n$ mod $m_n$
+		- This equation has unique solution if moduli are distinct and relatively prime.
+	- X = ($$a_1M_1M_1^{-1} + a_2M_2M_2^{-1} + ...$$) mod M
+		- M = $$m_1*m_2*m_3*....$$
+		- $M_n$ = $$M/m_n$$
+		- $M_n * M_n^{-1} \cong 1\ mod\ m_n$
+	- kX \cong a mod m
+		- X \cong $k^{-1}$ a mod m
+- ## Discrete logarithm problem
+	- ![image.png](../assets/image_1714831582740_0.png){:height 190, :width 561}
+	- ![image.png](../assets/image_1714831700835_0.png){:height 231, :width 303}
+- ## Factoring Algorithm
+	- ![image.png](../assets/image_1714831994906_0.png){:height 309, :width 351}
+	-
