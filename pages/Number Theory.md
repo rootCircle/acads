@@ -35,8 +35,8 @@
 		- Only if both number are relatively co-prime
 		- ![image.png](../assets/image_1714675325084_0.png){:height 189, :width 227}
 		- ### Using extended euclidean algorithm
-			- ![image.png](../assets/image_1714828535080_0.png)
-			- ![image.png](../assets/image_1714828760651_0.png)
+			- ![image.png](../assets/image_1714828535080_0.png){:height 245, :width 486}
+			- ![image.png](../assets/image_1714828760651_0.png){:height 183, :width 459}
 - ## Chinese Remainder Theorem
 	- X \cong $a_1$ mod $m_1$
 	  X \cong $a_2$ mod $m_2$
@@ -52,6 +52,21 @@
 - ## Discrete logarithm problem
 	- ![image.png](../assets/image_1714831582740_0.png){:height 190, :width 561}
 	- ![image.png](../assets/image_1714831700835_0.png){:height 231, :width 303}
-- ## Factoring Algorithm
-	- ![image.png](../assets/image_1714831994906_0.png){:height 309, :width 351}
-	-
+- ## Factoring Fermat's Algorithm
+	- To factor n = A.B; Used when A,B are close
+		- Solve for integral value of X = $\sqrt{n + Y^2}$ and put solution in n = (X + Y)(X - Y)
+- ## Fermat's primality test
+	- Test :
+		- If p is prime, then $a^p$ - a is a multiple of p \forall 1 \le a \lt p
+	- Not accurate, fails for number like 561
+- ## Miller Rabin primality test
+	- n - 1 = $2^k$ * m (greatest value of k satisfying it)
+	  logseq.order-list-type:: number
+	- Choose a, 1 \lt a \lt n - 1
+	  logseq.order-list-type:: number
+	- Compute $b_0=a^m mod n$
+	  logseq.order-list-type:: number
+		- If $b_0$ is +1, then composite, -1 then *probably* prime
+		  logseq.order-list-type:: number
+		- If neither, then calculate $b_1$..... until we get one, using $b_i = b_{i-1}^2 (mod\ n)$
+		  logseq.order-list-type:: number
