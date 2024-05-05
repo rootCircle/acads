@@ -1,0 +1,19 @@
+# Process
+	- ## Process synchronization
+		- Process
+			- Cooperative process : Dependent; share variable/memory/buffer/code/resources etc
+				- Race conditions -> Synchronization
+			- Independent process
+		- ### Producer Consumer Problem
+			- Producer produces onto buffer and consumer consumes it! Case of race conditions due to shared variable.
+			- ![image.png](../assets/image_1714938042924_0.png){:height 276, :width 470}
+		- ### Printer spooler Problem
+			- ![image.png](../assets/image_1714940096306_0.png){:height 349, :width 429}
+		- ### Critical Section
+			- Part of program having shared resources accessed by various processes
+			- Prefix and Suffix by entry and exit section in program and wait till they are complete, before completing their own's.
+			- #### Synchronization Mechanism
+				- Mutual Exclusion
+				- Progress
+				- Bounded Wait
+				- No assumption related to H/W and speed
