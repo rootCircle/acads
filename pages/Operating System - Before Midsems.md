@@ -1,12 +1,11 @@
 ## Types of OS
-collapsed:: true
 	- ### Batch OS
 		- Punch Cards or Magnetic Tapes => Operator
 		- I/O bound op => CPU idle
 	- ### Multiprogramming OS
 		- Non premptive
 		- P process will complete in entirety at once rather than a part/chunk except in case of IO bounds
-		- Multiple Processes are stored are RAM
+		- Multiple Processes are stored in RAM
 	- ### Multitasking/Time sharing OS
 		- Premptive (P1 for some time, then to P2, then to P3...)
 		- High response time
@@ -40,7 +39,6 @@ collapsed:: true
 		- SEEK_END : end
 	- ## System Calls
 		- ![image.png](../assets/image_1708952567046_0.png){:height 262, :width 648}
-	-
 	- ## Fork()
 		- create child process from parent process running from same stack/instruction pointer; multiprocessing
 		- thread has more shared resources than fork()
