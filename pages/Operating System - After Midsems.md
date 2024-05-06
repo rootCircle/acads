@@ -17,8 +17,8 @@
 				- rc = read counter
 				- ![image.png](../assets/image_1714989830913_0.png){:height 327, :width 367}
 			- #### Dining Philosopher's Problem
-				- ![image.png](../assets/image_1714992687003_0.png){:height 279, :width 330}
 				- ![image.png](../assets/image_1714992719272_0.png){:height 253, :width 208}
+				- ![image.png](../assets/image_1714992687003_0.png){:height 279, :width 330}
 				- Deadlock: If all philosopher takes there left fork, then nobody can eat and signal can't be given either.
 		- ### Critical Section
 			- Part of program having shared resources accessed by various processes
