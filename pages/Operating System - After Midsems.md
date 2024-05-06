@@ -4,14 +4,22 @@
 			- Cooperative process : Dependent; share variable/memory/buffer/code/resources etc
 				- Race conditions -> Synchronization
 			- Independent process
-		- ### Producer Consumer Problem
-			- Producer produces onto buffer and consumer consumes it! Case of race conditions due to shared variable.
-			- ![image.png](../assets/image_1714938042924_0.png){:height 276, :width 470}
-			- Solution
-				- ![image.png](../assets/image_1714989441974_0.png)
-				-
-		- ### Printer spooler Problem
-			- ![image.png](../assets/image_1714940096306_0.png){:height 349, :width 429}
+		- ### Problems
+			- #### Producer Consumer Problem
+				- Producer produces onto buffer and consumer consumes it! Case of race conditions due to shared variable.
+				- ![image.png](../assets/image_1714938042924_0.png){:height 276, :width 470}
+				- Solution
+					- ![image.png](../assets/image_1714989441974_0.png){:height 324, :width 468}
+			- #### Printer spooler Problem
+				- ![image.png](../assets/image_1714940096306_0.png){:height 349, :width 429}
+			- #### Reader Writer Problem
+				- Database R/W problem on same data
+				- rc = read counter
+				- ![image.png](../assets/image_1714989830913_0.png){:height 327, :width 367}
+			- #### Dining Philosopher's Problem
+				- ![image.png](../assets/image_1714992687003_0.png){:height 279, :width 330}
+				- ![image.png](../assets/image_1714992719272_0.png){:height 253, :width 208}
+				- Deadlock: If all philosopher takes there left fork, then nobody can eat and signal can't be given either.
 		- ### Critical Section
 			- Part of program having shared resources accessed by various processes
 			- Prefix and Suffix by entry and exit section in program and wait till they are complete, before completing their own's.
