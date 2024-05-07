@@ -1,5 +1,6 @@
 # Process
 	- ## Process synchronization
+	  collapsed:: true
 		- Process
 			- Cooperative process : Dependent; share variable/memory/buffer/code/resources etc
 				- Race conditions -> Synchronization
@@ -115,4 +116,39 @@
 				    }
 				  }
 				  ```
+	- ## Deadlocks
+		- Waiting on some event that never happens (eg: Dining Philosopher's Problem)
+		- Conditions
+			- Mutual Exclusion : No resource interleaving
+			  logseq.order-list-type:: number
+			- No preemption : No release of resource at preemption
+			  logseq.order-list-type:: number
+			- Hold & Wait : Hold resources acquired & Wait for event(resources)
+			  logseq.order-list-type:: number
+			- Circular Wait : Loop
+			  logseq.order-list-type:: number
+		- ### Resource Allocation Graph
+			- ![image.png](../assets/image_1715063494919_0.png){:height 358, :width 431}
+			- ![image.png](../assets/image_1715063524421_0.png){:height 224, :width 422}
+			- Waiting
+				- Finite -> Starvation
+				- Infinite time -> Deadlock
+			- In single instance, if RAG has cycle -> Deadlock and vice versa
+		- ### Deadlock Management
+			- Deadlock Ignorance (Ostrich method) : Performant
+			  logseq.order-list-type:: number
+			- Prevention
+			  logseq.order-list-type:: number
+				- Avoid mutual exclusion
+				  logseq.order-list-type:: number
+				- Premption using scheduling algo (time quanta)
+				  logseq.order-list-type:: number
+				- No hold & wait: All the resource the process is given before start, not on demand.
+				  logseq.order-list-type:: number
+				- Circular Wait: All resources are numbered and a process can request upcoming resource in increasing order of previous request. (Access 3rd now can access >3 resource only!)
+				  logseq.order-list-type:: number
+			- Avoidance (Banker's Algorithm) : Predetermine if safe or not!
+			  logseq.order-list-type:: number
+			- Detection & Recovery: Kill the process linearly/Resource preemption
+			  logseq.order-list-type:: number
 			-
