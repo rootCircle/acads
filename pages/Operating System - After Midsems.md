@@ -183,3 +183,7 @@ collapsed:: true
 				  logseq.order-list-type:: number
 				- Worst fit : To hole with max size. (slow, least internal fragmentation)
 				  logseq.order-list-type:: number
+	- ## Non-contiguous Memory
+		- Single process is divided into multiple partition called _pages_.
+		- RAM is also dividing in equal sized _frames_. Here, frame size = page size.
+		- No external fragmentation
