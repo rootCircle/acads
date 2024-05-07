@@ -158,4 +158,28 @@ collapsed:: true
 		-
 - # Memory Management
 	- Multiprogramming: More & more process from secondary memory to RAM
-	-
+		- CPU Utilization = 1 - K^n (n = no. of process in RAM at time; k = I/O time ratio)
+	- Techniques
+		- Contiguous - Fixed partition (static), Variable parition (Dynamic)
+		- Non-contiguous - Paging, Mutilevel paging, Inverted paging, Segmentation, Segmented paging
+	- ## Contiguous
+		- ### Fixed partition (Static)
+			- No of partitions are fixed, not the size
+			- Spanning is not allowed. (Entire process need to be accommodated in one partition)
+			- Internal fragmentation : Waste of memory space due to smaller process than the partition in RAM
+			- Has a limit in max process size & degree of multi-programming/no. of process at a time.
+			- External fragmentation: The RAM has sufficient memory but isn't contiguous to allot to a process.
+		- ### Variable partition (Dynamic)
+			- The partition are determined at runtime on demand and can be changed as well per need with no cap on numbers.
+			- Pros: No internal fragmentation, no limit of no. of process/ process size.
+			- Cons: External fragmentation (de-allocation creates holes in memory, which can be resolved using compaction i.e. moving non-allocated memory at whole together, but this is undesired) and allocation & deallocation is complex
+			- ![image.png](../assets/image_1715102638707_0.png){:height 208, :width 138}
+			- #### Allocation Algorithms
+				- First fit : To the first _fit_ hole after 0. (simple, fast, internal fragmentation)
+				  logseq.order-list-type:: number
+				- Next fit : To the next _fit_ hole after the previously allocated hole. (faster, internal fragmentation)
+				  logseq.order-list-type:: number
+				- Best fit : To hole with least internal fragmentation. (slow, least internal fragmentation, smaller holes may become unusable)
+				  logseq.order-list-type:: number
+				- Worst fit : To hole with max size. (slow, least internal fragmentation)
+				  logseq.order-list-type:: number
