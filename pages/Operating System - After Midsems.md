@@ -213,7 +213,8 @@ collapsed:: true
 				- Best case only 1st page of all process in RAM
 				- This decrease in CPU utilization due to increase page fault is thrashing.
 				- Fixed using increase memory size or slowing long term scheduler.
-		-
+		- ### Segmentation
+			-
 			-
 			-
 			-
