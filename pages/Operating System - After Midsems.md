@@ -1,6 +1,6 @@
 # Process
+collapsed:: true
 	- ## Process synchronization
-	  collapsed:: true
 		- Process
 			- Cooperative process : Dependent; share variable/memory/buffer/code/resources etc
 				- Race conditions -> Synchronization
@@ -148,6 +148,7 @@
 					- #### Banker's Algorithm
 						- ![image.png](../assets/image_1715070225374_0.png)
 						- Remaining Need = Max Need - Allocation
+						- Condition for no deadlock: Resources + Process > Total demand
 				- Circular Wait: All resources are numbered and a process can request upcoming resource in increasing order of previous request. (Access 3rd now can access >3 resource only!)
 				  logseq.order-list-type:: number
 			- Avoidance (Banker's Algorithm) : Predetermine if safe or not!
@@ -155,3 +156,6 @@
 			- Detection & Recovery: Kill the process linearly/Resource preemption
 			  logseq.order-list-type:: number
 		-
+- # Memory Management
+	- Multiprogramming: More & more process from secondary memory to RAM
+	-
