@@ -145,10 +145,13 @@
 				  logseq.order-list-type:: number
 				- No hold & wait: All the resource the process is given before start, not on demand.
 				  logseq.order-list-type:: number
+					- #### Banker's Algorithm
+						- ![image.png](../assets/image_1715070225374_0.png)
+						- Remaining Need = Max Need - Allocation
 				- Circular Wait: All resources are numbered and a process can request upcoming resource in increasing order of previous request. (Access 3rd now can access >3 resource only!)
 				  logseq.order-list-type:: number
 			- Avoidance (Banker's Algorithm) : Predetermine if safe or not!
 			  logseq.order-list-type:: number
 			- Detection & Recovery: Kill the process linearly/Resource preemption
 			  logseq.order-list-type:: number
-			-
+		-
