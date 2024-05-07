@@ -187,3 +187,33 @@ collapsed:: true
 		- Single process is divided into multiple partition called _pages_.
 		- RAM is also dividing in equal sized _frames_. Here, frame size = page size.
 		- No external fragmentation
+		- ### Paging
+			- MMU stores map of Page no. to frame no. in _page table_ of process
+			- CPU uses logical addressing(not physical address) using _page no_ and _page offset_.
+				- page offset bit = log2 (size of frame)
+				- Logical Address | Page No | Page Offset | ->
+				  Physical Address | Frame no(= PageTable[Page No.]) | Frame Offset(=Page offset) |
+				- Size of Page No + Page offset = Logical Address size (fixed by CPU)
+				- No. of entry in page table = No. of pages
+			- #### Pagetable entry
+				- ![image.png](../assets/image_1715113743495_0.png){:height 258, :width 562}
+				- Valid/Invalid - If page is present or not. (due to virtual memory swapping)
+				- Reference - If page was previously in main memory or not (L.R.U.)
+				- Cache - Cache page
+				- Dirty (Modify)- Modified page(user with write access), but write not commited to disk
+				- If total size of pagetable > frame size, then it can't be stored at once in memory, so a new _outer_ pagetable need to generated which _maps **partition of page tables** onto frames_, and the former page table becomes _inner_ page table.
+					- The inner pagetable is divided in _n_ partition of frame size and their map is stored in outer pagetable.
+					- ![image.png](../assets/image_1715115382270_0.png){:height 155, :width 464}
+			- #### Inverted paging
+				- Reverse of pagetable, maps **frame no** to _page no_ and process
+				- Global store of pagetable, saves memory, but high search time (linear search)
+				- ![image.png](../assets/image_1715116188716_0.png){:height 263, :width 152}
+			- #### Thrashing
+				- If no. of process in cpu \uparrow, degree of multiprogramming increase, but after a point cpu utilization decrease due to increase in page faults due to process execution.
+				- Best case only 1st page of all process in RAM
+				- This decrease in CPU utilization due to increase page fault is thrashing.
+				- Fixed using increase memory size or slowing long term scheduler.
+		-
+			-
+			-
+			-
