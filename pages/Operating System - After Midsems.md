@@ -214,7 +214,10 @@ collapsed:: true
 				- This decrease in CPU utilization due to increase page fault is thrashing.
 				- Fixed using increase memory size or slowing long term scheduler.
 		- ### Segmentation
-			- Segment
+			- Segmentation divides process into **variable size partition** of logical size/functions, rather than fixed size as in paging.
+			- ![image.png](../assets/image_1715160019830_0.png)
+			- Logical address stores Segment No and Segment offset (size), size should not exceed the size in segment table, else TRAP is generated
+			- Segment table -> Base address | Size
 			-
 			-
 			-
