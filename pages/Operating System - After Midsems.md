@@ -258,7 +258,29 @@ collapsed:: true
 	- ### Disk access time
 		- Seek time : (Average) Time taken by R/W head to reach desired track.
 		- Rotation Time : Time taken for one full rotation (360 deg)
-		- Rotational latency: Time taken to reach to desired sector. (half of rotation time)
-		- Transfer time:
-	-
-	-
+		- Rotational latency: (Average) Time taken to reach to desired sector. (half of rotation time)
+		- Transfer time = Data/Transfer Rate
+			- Transfer Rate = No. of Head(surfaces) * Capacity of one track * No of Rotations per sec
+		- Disk acess time = Seek time + Rotation time + Transfer Time + Controller time +  Queue Time (due to buffer queue for R/W)
+	- ## Disc scheduling algorithm
+		- To minimize seek time
+		- ### FCFS
+			- No starvation; Serves as soon as request arrives
+			- Performance issues
+			- ![image.png](../assets/image_1715177703887_0.png)
+		- ### SSTF (Shortest seek time first)
+			- Move in to nearest seek as present in request buffer.
+			- Average Response time is better; Optimal seek time; Starvation; Overhead due to calculation
+			- ![image.png](../assets/image_1715177861520_0.png)
+		- ### SCAN
+			- Moves in one direction **till the end** (199, although 190 is last request), respond to request and then go to nearest in opposite direction before start point and then continue moving in opposite direction **till the last request** (16 although last is 0).
+			- First move till the end is to accommodate any new dynamic request generated during r/w events in order.
+			- ![image.png](../assets/image_1715178179157_0.png)
+		- ### LOOK
+			- SCAN except it doesn't goes till the end, but the last request.
+		- ### C-SCAN (Circular SCAN)
+			- In C-SCAN, similar to SCAN the head moves in one direction till the end _and after that it moves head to **extremes** of opposite direction_ and continues responding to request in similar fashion.
+			- ![image.png](../assets/image_1715178601483_0.png)
+		- ### C-LOOK (Circular LOOK)
+			- C-SCAN but in LOOK way. (rather than going to extremes, goes to biggest/smallest request in both direction )
+			- ![image.png](../assets/image_1715179128321_0.png)
