@@ -214,7 +214,7 @@ collapsed:: true
 				- This decrease in CPU utilization due to increase page fault is thrashing.
 				- Fixed using increase memory size or slowing long term scheduler.
 		- ### Segmentation
-			-
+			- Segment
 			-
 			-
 			-
