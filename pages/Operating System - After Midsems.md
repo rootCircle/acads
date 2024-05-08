@@ -157,6 +157,7 @@ collapsed:: true
 			  logseq.order-list-type:: number
 		-
 - # Memory Management
+  collapsed:: true
 	- Multiprogramming: More & more process from secondary memory to RAM
 		- CPU Utilization = 1 - K^n (n = no. of process in RAM at time; k = I/O time ratio)
 	- Techniques
@@ -218,6 +219,46 @@ collapsed:: true
 			- ![image.png](../assets/image_1715160019830_0.png)
 			- Logical address stores Segment No and Segment offset (size), size should not exceed the size in segment table, else TRAP is generated
 			- Segment table -> Base address | Size
-			-
-			-
-			-
+		- #### Overlay
+			- Fitting process's size > main memory by splitting them in _independent_ partitions chunks and pass them one by one.
+		- ### Virtual Memory
+			- Page swap in(roll in)/swap out(roll out) to secondary memory.
+			- Loads only required page of process required, not everything (local referential fetching -> if xth page is there, then also load x+1, x-1 etc)
+			- #### Page fault
+				- If frame not in main memory(as per page table[Valid/Invalid]) -> TRAP issued -> User to OS -> OS performs auth -> access page from logical address space(secondary memory) -> loads page into main memory -> update frame no in page table -> restore control to User
+				- _Effective memory access time (EMAT)_ = p * (page fault service time) + (1 - p) * (main memory access time)
+					- p = probability of page fault
+					- page fault service time is of order ms
+					- main memory access time is of order ns
+			- #### Translation lookaside buffer (TLB)
+				- Storing part of page table in _Cache_ in addition to Main memory to decrease EMAT.
+					- Conventionally twice memory read is required to get a frame no. increasing latency.
+				- ![image.png](../assets/image_1715172117200_0.png)
+				- Uses tags to map to frame no.
+				- EMAT = Hit (TLB + x) + Miss (TLB + 2x)
+					- x = memory access time
+					- TLB = cache lookup time
+		- ### Page replacement algorithm
+			- #### FIFO
+				- ![image.png](../assets/image_1715173386205_0.png)
+				- ##### Belady's Anomaly in FIFO
+					- As no. of frames increase the page fault also increase, and hit decreases counterintutuively.
+			- #### Optimal Page Replacement
+				- Replace the page which is not used in longest dimension of time _in future_.
+				- In other words, replace the page having min proximity IN FUTURE to current page with the newer entry.
+			- #### LRU
+				- Replace the least recently used page _in past_.
+				- Searching in past takes time, but lesser page fault than FIFO.
+			- #### MRU
+				- Replace the most recently used page _in past_.
+- # Disk Architecture
+	- Disks has multiple **platters** -> has generally 2 **surface** (top/bottom) -> has concentric rings called **tracks** -> has **sectors** -> which store **data**
+	- ![image.png](../assets/image_1715176410662_0.png){:height 205, :width 150}
+		- Actuator arm can only move front/back; Read write head
+	- ### Disk access time
+		- Seek time : (Average) Time taken by R/W head to reach desired track.
+		- Rotation Time : Time taken for one full rotation (360 deg)
+		- Rotational latency: Time taken to reach to desired sector. (half of rotation time)
+		- Transfer time:
+	-
+	-
