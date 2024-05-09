@@ -23,9 +23,11 @@
 		  |n is prime|n - 1|
 		  |n = p * q, where p, q is prime and p \ne q|(p - 1)(q - 1)|
 		  |n = a * b[:br]either or both are composite|$n * (1 - 1/p1) (1 - 1/p2) .....$[:br][:br]where p1, p2,.... are distinct primes[:br]n=${p1}^{a1}.{p2}^{a2}.{p3}^{a3}.....$|
+		- If p is a prime, then $φ(p^m ) = (p^m − p^{m−1} )$.
 	- ### Fermat's Little Theorem
 		- If p is prime and a is +ve integer not divisible by p
 		- $a^{p-1}\equiv 1\ mod\ p$
+		- a^p-1 <-> a under mod p
 	- ### Euler's Theorem
 		- Every positive integer a & n and are relatively prime, then
 			- $a^{\Phi(n)} \equiv\ 1\ mod\ n$
