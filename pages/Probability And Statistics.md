@@ -1,4 +1,1 @@
-- [[Conditional Distribution]]
-- [[t-Distribution]]
 - [[Probability Complete Condensed]]
--
