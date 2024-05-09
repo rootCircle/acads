@@ -70,3 +70,6 @@
 		  logseq.order-list-type:: number
 		- If neither, then calculate $b_1$..... until we get one, using $b_i = b_{i-1}^2 (mod\ n)$
 		  logseq.order-list-type:: number
+- ## Bézout's identity
+	- Let *a* and *b* be integers with greatest common divisor *d*. Then there exist integers *x* and *y* such that *ax* + *by* = *d*
+	- A result of extended euclidean algo.
