@@ -186,6 +186,7 @@
 			- ![image.png](../assets/image_1715535141982_0.png){:height 262, :width 263}
 			- Reverse tunneling: Response to correspondent node from Home network rather than Foreign Network
 - ## WLAN
+	- CSMA/CA
 	- ![image.png](../assets/image_1715538505473_0.png){:height 209, :width 218}
 	- Access Point: Trans-receiver (connects to wired LAN using LAN card(WLAN adapter))
 	- Bridge: Connecting two LAN
@@ -209,6 +210,16 @@
 		- Poll fxn -> ask secondary to send data if any
 		- Select fxn -> ask secondary to receive data
 		- ![image.png](../assets/image_1715540339599_0.png){:height 131, :width 425}
+	- ### BSS
+		- Unit of connected network
+		- ESS (Extended service set): Interconnected BSS connected to server/gateway
+		- Station Types
+			- No transition mobility (intra BSS)
+			- BSS transition mobility (inter BSS)
+			- ESS transition mobility (inter ESS)
+		- ![image.png](../assets/image_1715543200441_0.png){:height 407, :width 543}
+		- NAV Network allocation vector: Time before new channel can be established
+		-
 - # Application Layer
   collapsed:: true
 	- ## DNS
@@ -257,7 +268,3 @@
 			- UDP; no auth; not internet but LAN tranfers
 		- ![image.png](../assets/image_1714420552833_0.png){:height 281, :width 291}
 			- PASV for initiation/auth
-		-
-			-
-		-
-		-
