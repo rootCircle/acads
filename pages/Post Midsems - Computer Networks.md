@@ -26,7 +26,7 @@
 		- #### Checksum
 			- Using CRC
 			- TCP Header[Checksum all bits 0] + TCP Data + Pseudo Header
-			- ![image.png](../assets/image_1714323901892_0.png)
+			- ![image.png](../assets/image_1714323901892_0.png){:height 221, :width 719}
 		- ((662a439b-d867-4150-861e-f7952102946b))
 		- ### Flags
 			- #### PSH
@@ -51,7 +51,7 @@
 	- ### Sliding Window Protocol
 		- #### Hybrid Sliding Window Protocol
 			- ##### Selective Repeat
-				- Sender Window Size = Receiver Window Size
+				- Sender Window(Contention Window CWND) Size = Receiver Window Size
 				- Accepts out of order segment (waiting for seq=101, but can accept 150th too if window size allows)
 			- ##### Go Back N
 				- Sending acummulative acknowledgements, of multiple packets at once.
@@ -61,24 +61,30 @@
 		- #### Dupack or Early retransmission
 			- Before transmission, on receiving _three duplicate_ ACK for a segment
 	- ### Congestion Control
+		- Open(transmitter not informed about congestion) / Closed(transmitter informed)
+			- Open -> Policy of Re-transmission,Window, ACK, discard and admission
+			- Closed -> Back pressure(router informs sender), choke packet(using ICMP to stop transmission), implicit signalling, explicit signalling
 		- Network Layer - ICMP (Router to Router)
 		- Transport Layer - TCP (Entire end to end network)
 		- By scaling window size (lower Window size lesser the data transferred)
+		- Wth = CWND/2
 		- Stages
 			- Slow start phase
 			  logseq.order-list-type:: number
-				- _Congestion Window(Wc)_ = 1 or 2 initially and will grow by _x_ 2 till threshold
+				- _Congestion Window(Wc)_ = 1 or 2 initially and will grow by _x_ 2 till threshold(=CWND/2)
 			- Congestion Avoidance phase
 			  logseq.order-list-type:: number
 				- Congestion Window increase by _+_ 1, if no congestion
-			- Continuously Congestion Avoidance phase
+			- Continuously Congestion detection phase
 			  logseq.order-list-type:: number
 				- Timeouts (Severe congestion)
 				  logseq.order-list-type:: number
 					- _Wth(threshold value)_ = Wc/2 and slow start
+					- Wc = 1
 				- 3 Duapack (Mild congestion)
 				  logseq.order-list-type:: number
 					- Wth = Wc/2 and congestion avoidance
+					- Wc = Wth
 			- ![image.png](../assets/image_1714380662623_0.png){:height 276, :width 528}
 				- Wth = Wr / 2 = 64 / 2 = 32
 				- Roundtrip time to reach Wr = log2 (Wth) + 1 + Wth
@@ -114,8 +120,8 @@
 	- ### Silly Window Syndrome
 		- Due to ineffective utilization of resources
 			- Window size is full : Reset the connection, as bandwidth wasted till persistent timer
-			- Slower Sender : When Sender is sending in very small chunks. Wait for Round Trip Time(RTT) as per Naggle's Algo for more data accumulation.
-			- Slower Receiver : Receiver is unable free window buffer at faster pace and hence smaller chunks from sender. Use clark's soln which says to don't send ACK till MSS or 0.5 buffer size is free.
+			- Slower Sender : When Sender is sending in very small chunks. Wait for Round Trip Time(RTT) as per **Naggle's Algo** for more data accumulation.
+			- Slower Receiver : Receiver is unable free window buffer at faster pace and hence smaller chunks from sender. Use **clark's soln** which says to don't send ACK till MSS or 0.5 buffer size is free.
 	- ### Congestion Control
 		- #### Traffic Shaping
 			- Make Rate of data transfer constant
