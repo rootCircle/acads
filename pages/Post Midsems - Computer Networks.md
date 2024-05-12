@@ -1,6 +1,7 @@
 # #[[Before Midsems - Computer Networks]]
 - ## TCP [contd]
   id:: 662e405d-9b2e-4f8a-8675-08cb35d52022
+  collapsed:: true
 	- ### TCP Header
 		- Byte stream not message stream (multiple messages sent in continuation)
 		- #### Sequence No. (32 bits)
@@ -155,9 +156,12 @@
 - ## UDP
 	- ((662a439b-7ccd-4755-8b35-6b5bae6899ed))
 - ## Mobile IP
+  collapsed:: true
 	- Allow change between network w/o changing IP with security (auth)
 	- Mobile Node (MN) {end user} ---> Correspondent Node (CN)
-	- Care of Address (COA)
+	- Care of Address (COA): Gives loc of MN in any given network
+		- Foreign Agent COA: Foreign agent present and deploy (Final addr = FA address)
+		- Co-located COA :absent (DHCP at FA)
 	- Home network (HN): MN is designated to this
 	- Foreign network: MN changes to this when network changes
 	- Foreign Agent COA : Provides services to MN during its visit
@@ -166,17 +170,47 @@
 	- Co-located COA : MN acquire temp IP, which is co-located COA
 	- Home agent (HA): Located in Home N/W. Tunnel for packet at MN starts at this and has location registry(MN's location)
 	- Tunnel : path taken by encapsulated packets
+	- Agents <-> Router
 	- ![image.png](../assets/image_1715529734993_0.png){:height 264, :width 594}
 	- Steps
-		- Registration (UDP)
 		- Discovery (ICMP) : Finding foreign agent
 			- Agent Advertisement
 			- Agent solicitation
-			- ![image.png](../assets/image_1715532866051_0.png)
-	-
-	-
-	-
+			- ![image.png](../assets/image_1715532866051_0.png){:height 277, :width 473}
+		- Registration (UDP)
+		  id:: 6640f9ce-b01b-43d3-bc5e-36ed7706e1ee
+			- Registering MN in HA as well as FA when changes network, upon registration MN is added in visitor list of FA
+			- Mobility binding -> association mobile node with COA
+			- ![image.png](../assets/image_1715533023278_0.png){:height 281, :width 488}
+		- Tunneling: Encapsulated Data pipe between Tunnel entry(HA) and End point(FA)
+			- ![image.png](../assets/image_1715535141982_0.png){:height 262, :width 263}
+			- Reverse tunneling: Response to correspondent node from Home network rather than Foreign Network
+- ## WLAN
+	- ![image.png](../assets/image_1715538505473_0.png){:height 209, :width 218}
+	- Access Point: Trans-receiver (connects to wired LAN using LAN card(WLAN adapter))
+	- Bridge: Connecting two LAN
+	- ![image.png](../assets/image_1715538621262_0.png){:height 225, :width 449}
+	- ### IEEE 802.11
+		- Specifies the Physical(MAC layer) adapted
+		- for
+			- infrastructure(CSMA/CA): multiple access point are connected, wifi hotspots
+				- ![image.png](../assets/image_1715539121785_0.png)
+			- adhoc network (infrastructure less)
+				- independent basic service set (IBSS) to communicate between devices(station).
+	- ### Hidden terminal problem
+		- ![image.png](../assets/image_1715539395348_0.png){:height 282, :width 494}
+		- Multiple access collision avoidance (MACA) -> 'Request to Send' (RTS) and 'Clear to Send' (CTS) frames are sent present in frame control
+	- ### Exposed terminal problem
+		- ![image.png](../assets/image_1715539671099_0.png){:height 308, :width 497}
+		- Fixed same as MACA as earlier
+	- ### Control Access Protocol - Polling
+		- A master node is selected which allows nodes to send frames in round robin fashion cyclic.
+		- Eliminate collision and increase efficiency, introduce polling delay (to notify), master node failure point.
+		- Poll fxn -> ask secondary to send data if any
+		- Select fxn -> ask secondary to receive data
+		- ![image.png](../assets/image_1715540339599_0.png){:height 131, :width 425}
 - # Application Layer
+  collapsed:: true
 	- ## DNS
 		- Store IP, domain name & Validity/TTL (time to live)
 		- UDP Protocol
