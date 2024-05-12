@@ -55,6 +55,7 @@
 				- Accepts out of order segment (waiting for seq=101, but can accept 150th too if window size allows)
 			- ##### Go Back N
 				- Sending acummulative acknowledgements, of multiple packets at once.
+				- If one fails, then send all again!
 	- ### Retransmission in TCP
 		- #### Timeout based
 			- Resend packet after timeout if ACK not received for it.
@@ -62,8 +63,9 @@
 			- Before transmission, on receiving _three duplicate_ ACK for a segment
 	- ### Congestion Control
 		- Open(transmitter not informed about congestion) / Closed(transmitter informed)
-			- Open -> Policy of Re-transmission,Window, ACK, discard and admission
-			- Closed -> Back pressure(router informs sender), choke packet(using ICMP to stop transmission), implicit signalling, explicit signalling
+			- Open -> Policy of Re-transmission,Window, ACK, discard (non-needed packets) and admission(check resource before admitting to network, check before send)
+			- Closed -> Back pressure(router informs (in chain of previous router to sender) sender), choke packet(using ICMP to stop transmission), implicit signalling, explicit signalling
+				- ![image.png](../assets/image_1715522262944_0.png){:height 301, :width 335}
 		- Network Layer - ICMP (Router to Router)
 		- Transport Layer - TCP (Entire end to end network)
 		- By scaling window size (lower Window size lesser the data transferred)
@@ -130,6 +132,7 @@
 			- Add data to buffer at any rate(from application layer), but output at constant rate only!
 			- Waste of bandwidth if no data.
 			- If overflow then discard!
+			- Uses average operating flow
 		- #### Token Bucket
 			- Same as Leaky Bucket, but add token even if no data inflow happen!
 			- Buffer Capacity C > Tokens in Bucket
@@ -137,9 +140,42 @@
 			- Max average rate = (C + rt)/t
 			- ![image.png](../assets/image_1714397304944_0.png){:height 329, :width 276}
 			- Data is pushed equal to the Buffer Capacity out of the bucket
+			- ![image.png](../assets/image_1715524282777_0.png){:height 164, :width 498}
 	- $Bandwidth = Data /{Round\ trip\ time}$
+	- ### Quality of Service
+		- Reliability, Delay, Jitter(variation in delay), Bandwidth
+		- Fix
+			- Scheduling Algo
+			- Traffic shaping (Token bucket, Leaky bucket)
+			- Admission control (accept if resource are available)
+			- Reserve reservation (resources are already reserved for upcoming packet)
+		- ![image.png](../assets/image_1715522968515_0.png){:height 307, :width 342}
+		- ![image.png](../assets/image_1715523119302_0.png){:height 271, :width 477}
+		-
 - ## UDP
 	- ((662a439b-7ccd-4755-8b35-6b5bae6899ed))
+- ## Mobile IP
+	- Allow change between network w/o changing IP with security (auth)
+	- Mobile Node (MN) {end user} ---> Correspondent Node (CN)
+	- Care of Address (COA)
+	- Home network (HN): MN is designated to this
+	- Foreign network: MN changes to this when network changes
+	- Foreign Agent COA : Provides services to MN during its visit
+		- Forwards packet to MN & provides security
+		- Implemented on router
+	- Co-located COA : MN acquire temp IP, which is co-located COA
+	- Home agent (HA): Located in Home N/W. Tunnel for packet at MN starts at this and has location registry(MN's location)
+	- Tunnel : path taken by encapsulated packets
+	- ![image.png](../assets/image_1715529734993_0.png){:height 264, :width 594}
+	- Steps
+		- Registration (UDP)
+		- Discovery (ICMP) : Finding foreign agent
+			- Agent Advertisement
+			- Agent solicitation
+			- ![image.png](../assets/image_1715532866051_0.png)
+	-
+	-
+	-
 - # Application Layer
 	- ## DNS
 		- Store IP, domain name & Validity/TTL (time to live)
