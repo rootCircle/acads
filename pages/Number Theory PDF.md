@@ -1,0 +1,32 @@
+# ss
+	- ![image.png](../assets/image_1715616839880_0.png){:height 99, :width 468}
+	- ![image.png](../assets/image_1715614393440_0.png){:height 100, :width 469}
+	- ![image.png](../assets/image_1715616790618_0.png){:height 100, :width 550}
+	- ![image.png](../assets/image_1715621847752_0.png){:height 105, :width 547}
+	- ![image.png](../assets/image_1715621964960_0.png){:height 73, :width 560}
+	- For a number of base b
+		- ![image.png](../assets/image_1715622362107_0.png){:height 106, :width 361}
+	- n! -> n-2 . n . [log2 n + 1]
+	- ![image.png](../assets/image_1715631972949_0.png){:height 71, :width 495}
+	- ![image.png](../assets/image_1715632513771_0.png){:height 94, :width 595}
+	- Fundamental theorem of arithmetic
+		- ![image.png](../assets/image_1715632935659_0.png){:height 75, :width 253}
+	- ![image.png](../assets/image_1715639358521_0.png){:height 77, :width 510}
+	- ![image.png](../assets/image_1715639565462_0.png)
+		- s 1 0 ; t 0 1
+			- s = s1 - q s2
+		- ![image.png](../assets/image_1715639847709_0.png){:height 360, :width 565}
+		- ![image.png](../assets/image_1715640058359_0.png)
+		- ![image.png](../assets/image_1715640726562_0.png)
+		- ![image.png](../assets/image_1715641194136_0.png)
+		- ![image.png](../assets/image_1715641698586_0.png)
+		- Fermat little theorm: Under Zn a^(n-1) = a
+		- ![image.png](../assets/image_1715642167794_0.png)
+		- ![image.png](../assets/image_1715642247116_0.png)
+		- ![image.png](../assets/image_1715642402929_0.png)
+		-
+		-
+		-
+		-
+- ## Symbols
+	-
