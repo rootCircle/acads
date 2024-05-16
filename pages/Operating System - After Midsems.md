@@ -1,5 +1,4 @@
 # Process
-collapsed:: true
 	- ## Process synchronization
 		- Process
 			- Cooperative process : Dependent; share variable/memory/buffer/code/resources etc
@@ -157,7 +156,6 @@ collapsed:: true
 			  logseq.order-list-type:: number
 		-
 - # Memory Management
-  collapsed:: true
 	- Multiprogramming: More & more process from secondary memory to RAM
 		- CPU Utilization = 1 - K^n (n = no. of process in RAM at time; k = I/O time ratio)
 	- Techniques
@@ -284,3 +282,32 @@ collapsed:: true
 		- ### C-LOOK (Circular LOOK)
 			- C-SCAN but in LOOK way. (rather than going to extremes, goes to biggest/smallest request in both direction )
 			- ![image.png](../assets/image_1715179128321_0.png)
+- # File system
+	- Control store/retrieval of files.
+	- Maps Block(chunks of file divided logically into blocks) to Sector(hard disk) (non-contiguous storage)
+	- ![image.png](../assets/image_1715892846119_0.png){:height 310, :width 464}
+		- Repositoning: Seeking using lseek
+		- Truncate: Remove file content/ not metadata, while delete removes both
+		- Identifier: OS gives ID to file
+	- ### Allocation menthod
+		- Contiguous Method
+		  logseq.order-list-type:: number
+			- Directory stores file, Start Addr(in sector), Length
+			- Easy, faster read but fragmentation(internal & external) issue and difficult to grow file.
+		- Non-contiguous method: 
+		  logseq.order-list-type:: number
+			- Linked list allocation
+			  logseq.order-list-type:: number
+				- Directory stores file, start address (in sector).
+				- Data stored in sector contains a pointer to the the next block. (if no next then -1)
+				- No external fragmentation, file size can increase, but large seek time, random access/direct access difficult, overhead of pointer
+				- ![image.png](../assets/image_1715895546747_0.png){:height 154, :width 262}
+			- Indexed allocation
+			  logseq.order-list-type:: number
+				- Directory stores file, Index block address
+					- Index block address stores not the data but the map of Blocks with sectors
+					- ![image.png](../assets/image_1715897360449_0.png){:height 198, :width 393}
+					- Support direct access, no external fragmentation, but pointer overhead, multilevel index(dividing index in multiple blocks)
+		- Allow efficient disk usage and faster access.block
+		- ## Unix inode structure
+			- ![image.png](../assets/image_1715897811022_0.png){:height 243, :width 287}
