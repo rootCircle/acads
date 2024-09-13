@@ -1,0 +1,18 @@
+### Introduction
+	- Cryptography - Achieve PAIN (Privacy & Confidential, Auth, Integrity, Non reputation[Proof of Action])
+	- Cryptoanalysis - Defeat PAIN
+	- #### Symbols
+		- Plain Text P over alphabet \Sigma
+		- Cipher Text C over alphabet \Delta
+		- Key space = K
+		- $w = d_k(e_k(w))$, w is plain text, k is key, d/e are decryption/encryption functions
+		- cryptosystem is a five-tuple (P, C, K, E, D)
+	- Avalanche effect: Small change in input, should cause large unpredictable change in output
+	- The cryptosystem should *not be closed under composition*
+	- Asymmetric key => Use public key to encrypt and private key to decrypt;
+		- Slower than symmetric encryption, because $$k = b^x mod\ m$$ (or y) is shared, and encryption key is $k=b^x.b^y\ mod\ m$ which has to be calculated!
+	- Symmetric key => Most secure and performant, but key exchange is problematic.
+	-
+-
+-
+-
