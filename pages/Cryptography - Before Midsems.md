@@ -31,5 +31,33 @@
 			- Key space = 26φ(26)
 		- #### Mono-alphabetic cipher: map each character to something else
 			- Frequency analysis attacks
+			- Homophone cipher: Replace each letter with variety of substitute dependent on frequency!
+			  logseq.order-list-type:: number
+			- Polygraphic Cipher: Substitution of a group of characters
+			  logseq.order-list-type:: number
+				- ##### Playfair cipher
+				  logseq.order-list-type:: number
+					- Take key, enter non-repeated letter in 5x5 box, fill remaining with increasing order of alphabet that haven't occurred before!
+					- *I & J in same block*
+					- ![image.png](../assets/image_1726312051911_0.png){:height 174, :width 320}
+					- Cipher is next in same row
+			- Poly-alphabetic Cipher
+			  logseq.order-list-type:: number
+				- Vigenére Cipher
+				  logseq.order-list-type:: number
+					- $K = (k_0, k_1, ... , k_{n−1}) ,\ where\ each\ k_i ∈ \{0, 1, · · · , 25\}$
+					- $C_i ≡ (P_i + k_{i\ mod\ n}) mod\ 26$
+					- ![image.png](../assets/image_1726313318369_0.png){:height 169, :width 321}
+					- Kasiski Test: GCD of separation between two identical segments in cipher gives us the possible length of cipher.
+					- Index of Coincidence: probability that two randomly selected letters in the ciphertext represent the same plaintext symbol
+						- ![image.png](../assets/image_1726313609639_0.png){:height 96, :width 298}
+						- 0.03846 ≤ I ≤ 0.065
+				- Hill cipher
+				  logseq.order-list-type:: number
+					- ![image.png](../assets/image_1726313863756_0.png)
+	- ### Codebook Cipher
+		- A book with mapping of plain segment to cipher and vice-versa. The longer the block more immune to frequency analysis!
+		- #### Block Cipher
+			- $T[X] = f_{key}(X)$ T is Table, and X is block
+	- ### One
 		-
--
