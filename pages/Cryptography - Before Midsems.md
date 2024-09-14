@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 	- Cryptography - Achieve PAIN (Privacy & Confidential, Auth, Integrity, Non reputation[Proof of Action])
 	- Cryptoanalysis - Defeat PAIN
 	- #### Symbols
@@ -7,12 +7,29 @@
 		- Key space = K
 		- $w = d_k(e_k(w))$, w is plain text, k is key, d/e are decryption/encryption functions
 		- cryptosystem is a five-tuple (P, C, K, E, D)
+		- if $$e_k=d_k$$, then k is *involuntary key*.
 	- Avalanche effect: Small change in input, should cause large unpredictable change in output
 	- The cryptosystem should *not be closed under composition*
 	- Asymmetric key => Use public key to encrypt and private key to decrypt;
 		- Slower than symmetric encryption, because $$k = b^x mod\ m$$ (or y) is shared, and encryption key is $k=b^x.b^y\ mod\ m$ which has to be calculated!
 	- Symmetric key => Most secure and performant, but key exchange is problematic.
-	-
--
--
+- ## Classical ciphers
+	- ### Transposition Cipher
+		- #### Columnar: Type in rows(exclude space), read in columns separated by space
+			- Complete: Left spaces are replaced with 'z'
+			  logseq.order-list-type:: number
+			- Incomplete
+			  logseq.order-list-type:: number
+			- Distance between two consecutive `z` may give column size.
+		- #### Row: Type in column, read in rows
+		- #### Keyword Column Transposition: Like columnar but uses a key, and reads in map of alphabetical order of letter of keys!
+	- ### Shift Cipher
+		- #### Caesar cipher (Shift $\le$ 13; ROT13 => Shift by 13)
+		- #### Affine cipher
+			- $c_i ≡ (ap_i + b) mod\ 26$
+			- character A=0, Z=25
+			- Key space = 26φ(26)
+		- #### Mono-alphabetic cipher: map each character to something else
+			- Frequency analysis attacks
+		-
 -
