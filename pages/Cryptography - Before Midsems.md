@@ -59,5 +59,11 @@
 		- A book with mapping of plain segment to cipher and vice-versa. The longer the block more immune to frequency analysis!
 		- #### Block Cipher
 			- $T[X] = f_{key}(X)$ T is Table, and X is block
-	- ### One
-		-
+	- ### One time pad
+		- Encryption: Plaintext ⊕ Key = Ciphertext
+		- Key length = Length of plain text
+	- ### Engima (Machine cipher)
+		- Poly alphabetic substitution cipher, but with each letter typed permutation changes
+- ## Shannon's Theory and Perfect Secrecy
+	- For a system to be secure, it should require at-least 2^112 ops before breaking it.
+	-
