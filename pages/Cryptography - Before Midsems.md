@@ -75,6 +75,27 @@
 	  |ACPA/CPA2|CPA, in which choice of plain text depend on cipher text from previous request|
 	  |ACCA/CCA2|CCA, in which choice of cipher text depend on plain text from previous request|
 	- ### Perfect Secrecy
+		- #### Introduction
+			- Probability of C given K & P
+			- ![image.png](../assets/image_1726381040007_0.png)
+			- ![image.png](../assets/image_1726382486332_0.png)
+			- ![image.png](../assets/image_1726382504034_0.png)
+			- K and P are independent
+		- Perfect secrecy or Shannon-secure: $$Pr[x|y] = Pr[x] ∀x ∈ P, y ∈ C.$$
+		- or every x ∈ P and every y ∈ C, ∃ ! K : eK (x) = y.
+		- Let $P = C = K = (Z_2)^n$ for n ≥ 1. For $K ∈ (Z_2)^n$ , $e_K (x) = (x_1 + K_1, . . . , x_n + K_n)$ mod 2
+	- #### Self Information (less probability => more information)
+		- ![image.png](../assets/image_1726383763625_0.png)
+	- #### Entropy (average self information)
+		- ![image.png](../assets/image_1726384169878_0.png)
+		- ##### Theorems
+			- H(X) ≤ log2 n where n=|X| & equality if when Pr[x]=1/n
+			- H(X, Y) ≤ H(X) + H(Y) & equality if X, Y are independent
+			- $H(X|Y) = ∑_y Pr[y].H(X|y) = − ∑_y ∑_x Pr[y]Pr[x|y] log_2 Pr[x|y]$.
+			- H(X, Y) = H(Y) + H(X|Y)
+			- H(X|Y) ≤ H(X) & equality if X, Y are independent
+			- H(K|C) = H(K) + H(P) − H(C)
+	- #### Spurious Key (false positive keys that give wrong meaning when decrypting a cipher)
 		-
-		- ![image.png](../assets/image_1726381040007_0.png)
-		- K and P are independent
+		-
+		-
