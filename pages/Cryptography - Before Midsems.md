@@ -96,6 +96,12 @@
 			- H(X|Y) ≤ H(X) & equality if X, Y are independent
 			- H(K|C) = H(K) + H(P) − H(C)
 	- #### Spurious Key (false positive keys that give wrong meaning when decrypting a cipher)
-		-
+	- #### Entropy of plain text
+		- ![image.png](../assets/image_1726397925295_0.png)
+	- #### Redundancy of a Language
+		- ![image.png](../assets/image_1726397968270_0.png)
+	- #### Unicity distance:
+		- The average amount of ciphertext required for an opponent to be able to uniquely compute the key, given enough computing time
+			- Spurious Key=0
 		-
 		-
