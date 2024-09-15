@@ -66,4 +66,15 @@
 		- Poly alphabetic substitution cipher, but with each letter typed permutation changes
 - ## Shannon's Theory and Perfect Secrecy
 	- For a system to be secure, it should require at-least 2^112 ops before breaking it.
-	-
+	- |Attack|Compromised|
+	  |--|--|
+	  |KCA|Cipher Text|
+	  |KPA|Plain Text|
+	  |CPA/CPA1|Cipher Text for any choosen plain text|
+	  |CCA/CCA1|Plain text for any choosen cipher text|
+	  |ACPA/CPA2|CPA, in which choice of plain text depend on cipher text from previous request|
+	  |ACCA/CCA2|CCA, in which choice of cipher text depend on plain text from previous request|
+	- ### Perfect Secrecy
+		-
+		- ![image.png](../assets/image_1726381040007_0.png)
+		- K and P are independent
