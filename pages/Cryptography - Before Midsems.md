@@ -131,19 +131,39 @@
 	- ### Padding
 		- If there are x bits left, then pad message with hex(x).
 		- If it is a multiple of 16 bytes, add 16 bytes 10.
+- ## Feistal Structure
+	- ![image.png](../assets/image_1726497098267_0.png){:height 382, :width 202}
 - ## DES
-	- ![image.png](../assets/image_1726492805797_0.png){:height 288, :width 500}
-	- ![image.png](../assets/image_1726493304360_0.png){:height 366, :width 638}
+	- 64-bit block length
+	  56-bit key length
+	  16 rounds
+	  48-bit of key used in each round
+	- ![image.png](../assets/image_1726503056053_0.png){:height 353, :width 319}
+	- ![image.png](../assets/image_1726493304360_0.png){:height 430, :width 742}
 		- Left Shift is 1 for i =1, 2, 9, 16 and 2 for other rounds
-	- Initial Permutation
-		- ![image.png](../assets/image_1726493360084_0.png){:height 243, :width 602}
-	- Inverse Initial Permutation
-		- ![image.png](../assets/image_1726493413522_0.png){:height 306, :width 313}
-	- Expansion Permutation
-		- ![image.png](../assets/image_1726495513974_0.png){:height 231, :width 307}
+	- *Appendix:* Initial & Inverse Initial Permutation
+	  collapsed:: true
+		- ![image.png](../assets/image_1726502057162_0.png)
+	- *Appendix:* Expansion & Permutation
+	  collapsed:: true
+		- ![image.png](../assets/image_1726502210078_0.png){:height 214, :width 405}
 	- S Box (101101) => First and last bit represent row, rest are column in S box
-	- Permutation Function
-		- ![image.png](../assets/image_1726496086631_0.png)
+	- *Decryption*
+	  collapsed:: true
+		- ![image.png](../assets/image_1726496699376_0.png){:height 326, :width 274}
+	- ![image.png](../assets/image_1726510926113_0.png)
+	- Weak Key
+		- DES k(DES k(m)) = m, ∀ m.
+	- Semi weak key
+		- DES k1 (DES k2 (m)) = m, ∀ m.
+	- Weak permutation
+		- y1 = Fk(x1) & y2 = Fk(x2) => k is easy to extract
+	- #### DESX
+		- ![image.png](../assets/image_1726516353760_0.png)
+		- Keys = 184 bits (approx 118 effective)
+- ## AES
+	- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
+	- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
 	-
 	-
 	-
