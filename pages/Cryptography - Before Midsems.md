@@ -68,12 +68,14 @@
 	- For a system to be secure, it should require at-least 2^112 ops before breaking it.
 	- |Attack|Compromised|
 	  |--|--|
-	  |KCA|Cipher Text|
-	  |KPA|Plain Text|
+	  |KCA/COA|number of ciphertexts polynomial in the input size|
+	  |KPA|plaintext ciphertext pairs|
 	  |CPA/CPA1|Cipher Text for any choosen plain text|
 	  |CCA/CCA1|Plain text for any choosen cipher text|
 	  |ACPA/CPA2|CPA, in which choice of plain text depend on cipher text from previous request|
 	  |ACCA/CCA2|CCA, in which choice of cipher text depend on plain text from previous request|
+	- Grey Box: Access to cipher implementation, Side channel attacks (fault, power etc)
+	- White Box: Open devices
 	- ### Perfect Secrecy
 		- #### Introduction
 			- Probability of C given K & P
@@ -104,6 +106,30 @@
 		- The average amount of ciphertext required for an opponent to be able to uniquely compute the key, given enough computing time
 			- Spurious Key=0
 - ## Block Cipher
+	- $f^-1$ exists
+	- ![image.png](../assets/image_1726480964513_0.png)
+	- n = block size, k = key size
+	- subset of $2^k$ permutations among all $2^n$! permutations on n bits.
+	- #### Kerckhoffs’ Principle: Only key is secret
+	- ### Even-Mansour Construction
+		- ![image.png](../assets/image_1726482098581_0.png){:height 108, :width 316}
+		- \pi is a permutation function
+		- $M ∈ {0, 1}^n$
+	- ### Product cipher
+		- $S_1 × S_2 = (P, P, K_1 × K_2, E_1, D_1)$
+		- $e_{(K_1,K_2)}(x) = e_{K_2} (e_{K_1} (x))$
+	- ### Iterative Block cipher
+		- ![image.png](../assets/image_1726482984337_0.png){:height 181, :width 410}
+	- ### Confusion / Diffusion
+		- #### Confusion: Make cipher confusing from plain text (substitution/ S Box)
+		- #### Diffusion: Rearrange/Spread out the bits. (bit permutation)
+		- Methods
+			- S-box + Permutation
+			- S-box + MDS matrix
+			- ARX (Mod Addition + Rotation & Xoring)
+		- ![image.png](../assets/image_1726484650816_0.png){:height 187, :width 333}
+	- ### Padding
+		- If there are x bits left, then pad message with hex(x).
+		- If it is a multiple of 16 bytes, add 16 bytes 10.
 	-
-	-
-	-
+		-
