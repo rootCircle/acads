@@ -103,5 +103,7 @@
 	- #### Unicity distance:
 		- The average amount of ciphertext required for an opponent to be able to uniquely compute the key, given enough computing time
 			- Spurious Key=0
-		-
-		-
+- ## Block Cipher
+	-
+	-
+	-
