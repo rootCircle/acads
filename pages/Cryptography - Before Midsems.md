@@ -131,5 +131,19 @@
 	- ### Padding
 		- If there are x bits left, then pad message with hex(x).
 		- If it is a multiple of 16 bytes, add 16 bytes 10.
+- ## DES
+	- ![image.png](../assets/image_1726492805797_0.png){:height 288, :width 500}
+	- ![image.png](../assets/image_1726493304360_0.png){:height 366, :width 638}
+		- Left Shift is 1 for i =1, 2, 9, 16 and 2 for other rounds
+	- Initial Permutation
+		- ![image.png](../assets/image_1726493360084_0.png){:height 243, :width 602}
+	- Inverse Initial Permutation
+		- ![image.png](../assets/image_1726493413522_0.png){:height 306, :width 313}
+	- Expansion Permutation
+		- ![image.png](../assets/image_1726495513974_0.png){:height 231, :width 307}
+	- S Box (101101) => First and last bit represent row, rest are column in S box
+	- Permutation Function
+		- ![image.png](../assets/image_1726496086631_0.png)
 	-
-		-
+	-
+	-
