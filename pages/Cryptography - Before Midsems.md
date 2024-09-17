@@ -162,12 +162,23 @@
 		- ![image.png](../assets/image_1726516353760_0.png)
 		- Keys = 184 bits (approx 118 effective)
 - ## AES
+	- $m(x) = x^8 + x^4 + x^3 + x + 1\ or\ 11B$
 	- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
 	- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
 	- ![image.png](../assets/image_1726525110544_0.png){:height 343, :width 428}
 	- Shift -> 2nd row 1 byte left circular shift and so on
 	- Mix col
 		- ![image.png](../assets/image_1726525403151_0.png)
-		- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
+	- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
+- ## Mode of Operation
+	- Electronic Codebook (ECB)
+		- ![image.png](../assets/image_1726567841157_0.png){:height 224, :width 177}
+	- Cipher Block Chaining(CBC)
+		- Initialization Vector `IV`
+		- ![image.png](../assets/image_1726567905068_0.png){:height 217, :width 263}
+	- Cipher Feedback (CFB)
 		-
+	- Output Feedback (OFB)
+		- ![image.png](../assets/image_1726568997652_0.png){:height 279, :width 453}
+	- Counter (CTR)
 	-
