@@ -131,37 +131,37 @@
 	- ### Padding
 		- If there are x bits left, then pad message with hex(x).
 		- If it is a multiple of 16 bytes, add 16 bytes 10.
-- ## Feistal Structure
-	- ![image.png](../assets/image_1726497098267_0.png){:height 382, :width 202}
-- ## DES
-	- 64-bit block length
-	  56-bit key length
-	  16 rounds
-	  48-bit of key used in each round
-	- ![image.png](../assets/image_1726503056053_0.png){:height 353, :width 319}
-	- ![image.png](../assets/image_1726493304360_0.png){:height 430, :width 742}
-		- Left Shift is 1 for i =1, 2, 9, 16 and 2 for other rounds
-	- *Appendix:* Initial & Inverse Initial Permutation
-	  collapsed:: true
-		- ![image.png](../assets/image_1726502057162_0.png)
-	- *Appendix:* Expansion & Permutation
-	  collapsed:: true
-		- ![image.png](../assets/image_1726502210078_0.png){:height 214, :width 405}
-	- S Box (101101) => First and last bit represent row, rest are column in S box
-	- *Decryption*
-	  collapsed:: true
-		- ![image.png](../assets/image_1726496699376_0.png){:height 326, :width 274}
-	- ![image.png](../assets/image_1726510926113_0.png)
-	- Weak Key
-		- DES k(DES k(m)) = m, ∀ m.
-	- Semi weak key
-		- DES k1 (DES k2 (m)) = m, ∀ m.
-	- Weak permutation
-		- y1 = Fk(x1) & y2 = Fk(x2) => k is easy to extract
-	- #### DESX
-		- ![image.png](../assets/image_1726516353760_0.png)
-		- Keys = 184 bits (approx 118 effective)
-- ## AES
+	- ### Feistal Structure
+		- ![image.png](../assets/image_1726497098267_0.png){:height 382, :width 202}
+	- ### DES
+		- 64-bit block length
+		  56-bit key length
+		  16 rounds
+		  48-bit of key used in each round
+		- ![image.png](../assets/image_1726503056053_0.png){:height 353, :width 319}
+		- ![image.png](../assets/image_1726493304360_0.png){:height 430, :width 742}
+			- Left Shift is 1 for i =1, 2, 9, 16 and 2 for other rounds
+		- *Appendix:* Initial & Inverse Initial Permutation
+		  collapsed:: true
+			- ![image.png](../assets/image_1726502057162_0.png)
+		- *Appendix:* Expansion & Permutation
+		  collapsed:: true
+			- ![image.png](../assets/image_1726502210078_0.png){:height 214, :width 405}
+		- S Box (101101) => First and last bit represent row, rest are column in S box
+		- *Decryption*
+		  collapsed:: true
+			- ![image.png](../assets/image_1726496699376_0.png){:height 326, :width 274}
+		- ![image.png](../assets/image_1726510926113_0.png)
+		- Weak Key
+			- DES k(DES k(m)) = m, ∀ m.
+		- Semi weak key
+			- DES k1 (DES k2 (m)) = m, ∀ m.
+		- Weak permutation
+			- y1 = Fk(x1) & y2 = Fk(x2) => k is easy to extract
+		- #### DESX
+			- ![image.png](../assets/image_1726516353760_0.png)
+			- Keys = 184 bits (approx 118 effective)
+- ### AES
 	- $m(x) = x^8 + x^4 + x^3 + x + 1\ or\ 11B$
 	- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
 	- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
@@ -170,15 +170,53 @@
 	- Mix col
 		- ![image.png](../assets/image_1726525403151_0.png)
 	- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
-- ## Mode of Operation
-	- Electronic Codebook (ECB)
+- ### Mode of Operation
+	- #### Electronic Codebook (ECB)
 		- ![image.png](../assets/image_1726567841157_0.png){:height 224, :width 177}
-	- Cipher Block Chaining(CBC)
+	- #### Cipher Block Chaining(CBC)
 		- Initialization Vector `IV`
 		- ![image.png](../assets/image_1726567905068_0.png){:height 217, :width 263}
-	- Cipher Feedback (CFB)
+	- #### Cipher Feedback (CFB)
+		- ![image.png](../assets/image_1726572254173_0.png){:height 224, :width 434}
+		- Ek = Dk => not for public key encryption
+	- #### Output Feedback (OFB)
+		- ![image.png](../assets/image_1726568997652_0.png){:height 246, :width 400}
+		- synchronous
+	- #### Counter (CTR)
+		- ![image.png](../assets/image_1726572444821_0.png){:height 221, :width 367}
+	- ### GCM
+		- $g(x) = x^128 + x^7 + x^2 + x + 1$
+		- ![image.png](../assets/image_1726575295633_0.png){:height 337, :width 350}
+	- ### XTS-AES
+		- ![image.png](../assets/image_1726575174561_0.png){:height 268, :width 402}
+- ## Stream Cipher
+	- Synchronous: Keystream is generated independently
+		- ![image.png](../assets/image_1726577181788_0.png)
+	- Self synchronous: Depends on previous cipher stream as well
+		- ![image.png](../assets/image_1726577193897_0.png)
+	- Software(Profile 1) -> 128 bits / Hardware(Profile 2) -> 80 bits
+	- ### Tests on PRBG
+		- Poly-time statistical tests: if no poly-time algorithm can correctly distinguish between an output sequence of the generator and a TRBG of the same length with prob significantly > 1/2 .
+		- Next-bit test: if there is no poly-time algo which, on input of the first l bits of an output sequence s, can predict the (l + 1)th bit of s with prob significantly > 1/2 .
+		- PRBG that passes the next-bit test is called a cryptographically secure PRBG.
+	- ### PRBG Generators
+		- #### Linear Congruential Generator
+			- $x_{n}\equiv ax_{n-1}+b\ mod\ m$
+			- iff
+				- gcd(b, m) = 1,
+				- if p | m, then p | (a − 1) for all prime factor p of m,
+				- if 4 | m, then 4 | (a − 1)
+		- #### RSA CSPRBG
+			- n = p.q (p, q are large primes)
+			- 0 < e < φ(n) s/t gcd(e, φ(n)) = 1
+			- $x_{i}\equiv x_{i-1}^e\ mod\ n$
+		- #### BBS (Blum-Blum-Shub) CSPRBG
+			- n=p.q (p,q ≡ 3 mod 4 and large primes)
+			- take x, s/t gcd(x, n) = 1
+			- $x_i ≡ x^2_{i−1} mod\ n$
+			- l random bits are b1, b2, . . . , bl (bi being least significant digit of xi) [same in RSA CSPRBG]
+	- ### Golomb’s Postulates
+		- Gap - Run of 0s; Block - Run of 1s
 		-
-	- Output Feedback (OFB)
-		- ![image.png](../assets/image_1726568997652_0.png){:height 279, :width 453}
-	- Counter (CTR)
-	-
+		-
+-
