@@ -217,6 +217,36 @@
 			- l random bits are b1, b2, . . . , bl (bi being least significant digit of xi) [same in RSA CSPRBG]
 	- ### Golomb’s Postulates
 		- Gap - Run of 0s; Block - Run of 1s
+		- No. of 0s and 1s differs by max 1.
+		- Half runs should have length 1, 1/4 have length 2 ,1/8 have length 3 and so on
+		- ![image.png](../assets/image_1726585680517_0.png)
+			- No. of matching bits
+			- ![image.png](../assets/image_1726585725755_0.png)
+			- two valued at T=0 and $$T \ne 0$$
+	- ### Five basic tests
+		- #### Frequency Test (Monobit Test)
+			- ![image.png](../assets/image_1726586131788_0.png)
+			- follows a χ2 distribution with 1 degree of freedom if n ≥ 10.
+			- n0 = no. of 0s
+		- #### Serial Test (2-bit Test)
+			- ![image.png](../assets/image_1726586217594_0.png)
+			- follows a χ2 distribution with 2 degrees of freedom if n ≥ 21.
+		- #### Poker Test
+			- ![image.png](../assets/image_1726588923033_0.png)
+			- follows a χ2 distribution with 2^m − 1 degrees of freedom
+		- #### Runs test
+			- ![image.png](../assets/image_1726593571579_0.png)
+			- follows a χ2 distribution with 2k − 2 degrees of freedom
+			- The expected number of gaps (or blocks) of length i in a random sequence of length n
+				- ![image.png](../assets/image_1726593747829_0.png)
+		- #### Autocorrelation test
+			- ![image.png](../assets/image_1726593597063_0.png)
+			- follows an N(0, 1) distribution if n − d ≥ 10
+			- check for correlation between sequence and shifted version
+	- ### Linear Feedback Shift Registers (LFSR)
+		- Connection polynomial
+			- ![image.png](../assets/image_1726594197647_0.png)
+		- ![image.png](../assets/image_1726594630342_0.png){:height 360, :width 536}
+		- Period -> S j+N = S j (<= 2^n - 1) n = degree
+		- L(s) = length of the shortest LFSR that generates s
 		-
-		-
--
