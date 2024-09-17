@@ -164,6 +164,10 @@
 - ## AES
 	- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
 	- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
-	-
-	-
+	- ![image.png](../assets/image_1726525110544_0.png){:height 343, :width 428}
+	- Shift -> 2nd row 1 byte left circular shift and so on
+	- Mix col
+		- ![image.png](../assets/image_1726525403151_0.png)
+		- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
+		-
 	-
