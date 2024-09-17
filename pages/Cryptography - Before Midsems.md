@@ -64,6 +64,16 @@
 		- Key length = Length of plain text
 	- ### Engima (Machine cipher)
 		- Poly alphabetic substitution cipher, but with each letter typed permutation changes
+	- ### Summary till now!
+		- |Name|Description|
+		  |--|--|
+		  |Casear|a + k mod 26|
+		  |Affine|ak + b mod 26|
+		  |Playfair|5x5 box with I/J same and word in pair of 5|
+		  |Hill cipher|3x3 matrix of key vs columnar plain matrix|
+		  |Vigenere|ai + ki mod 26|
+		  |One time Pad|Plain text XOR Key|
+		  |Keyword column|Column transposition, but in order of KEY alphabetically|
 - ## Shannon's Theory and Perfect Secrecy
 	- For a system to be secure, it should require at-least 2^112 ops before breaking it.
 	- |Attack|Compromised|
@@ -103,7 +113,8 @@
 	- #### Redundancy of a Language
 		- ![image.png](../assets/image_1726397968270_0.png)
 	- #### Unicity distance:
-		- The average amount of ciphertext required for an opponent to be able to uniquely compute the key, given enough computing time
+		- The average
+			- for an opponent to be able to uniquely compute the key, given enough computing time
 			- Spurious Key=0
 - ## Block Cipher
 	- $f^-1$ exists
