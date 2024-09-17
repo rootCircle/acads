@@ -22,7 +22,7 @@
 			  logseq.order-list-type:: number
 			- Distance between two consecutive `z` may give column size.
 		- #### Row: Type in column, read in rows
-		- #### Keyword Column Transposition: Like columnar but uses a key, and reads in map of alphabetical order of letter of keys!
+		- #### Keyword Column Transposition: Like columnar but uses a key, and reads in 'alphabetical order of letter of keys' unlike left to right!
 	- ### Shift Cipher
 		- #### Caesar cipher (Shift $\le$ 13; ROT13 => Shift by 13)
 		- #### Affine cipher
