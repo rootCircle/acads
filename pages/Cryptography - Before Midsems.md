@@ -248,5 +248,27 @@
 			- ![image.png](../assets/image_1726594197647_0.png)
 		- ![image.png](../assets/image_1726594630342_0.png){:height 360, :width 536}
 		- Period -> S j+N = S j (<= 2^n - 1) n = degree
-		- L(s) = length of the shortest LFSR that generates s
-		-
+		- Linear complexity L(s) = length of the shortest LFSR that generates s
+		- L(s ⊕ t) ≤ L(s) + L(t)
+	- ### Non linear FSR
+		- ![image.png](../assets/image_1726596833435_0.png){:height 225, :width 377}
+	- ### RC4
+		- Key scheduling Algo
+			- ![image.png](../assets/image_1726598323683_0.png){:height 238, :width 391}
+		- Pseudorandom Generation Algorithm
+			- ![image.png](../assets/image_1726598353262_0.png){:height 259, :width 353}
+	- ### Trivium
+		- ![image.png](../assets/image_1726598546899_0.png){:height 276, :width 621}
+	- ### Salsa 20/20
+		- Modular Add -> XOR Sum -> Left circular shift (32 bit word)
+		- 256 bit key; 64 bit nonce; 64 bit counter
+		- State is 4x4 matrix, each of 32 bit word
+		- ![image.png](../assets/image_1726598986775_0.png){:height 446, :width 322}
+		- double-round (S ) = row-round (column-round (S ))
+		- Salsa20k(n, b) = S + double-round10(S )
+	- ### ChaCha 20
+	- ![image.png](../assets/image_1726599834850_0.png)
+	- row-round replaced by diagonal-round
+	- 256 bit key and 96 bit nonce
+	- ![image.png](../assets/image_1726600009269_0.png)
+	-
