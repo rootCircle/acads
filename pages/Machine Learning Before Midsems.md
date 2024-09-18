@@ -1,15 +1,17 @@
--
-- Covariance matrix /Eigen vector/matrix
-	- ![image.png](../assets/image_1726673748216_0.png)
-	- ![image.png](../assets/image_1726674151969_0.png){:height 414, :width 570}
+### Principle Component Analysis
+	- Reduce dimension by changing POV
+	- Covariance matrix /Eigen vector/matrix
+		- ![image.png](../assets/image_1726673748216_0.png)
+		- ![image.png](../assets/image_1726674151969_0.png){:height 296, :width 406}
+- ### Recall / Precision
 	- Recall = True-Positive/Actual Yes
 	- Precision = True-Positive/Predicted-Yes
 	- Type I -> False Positive
-	- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
-	- ### Backpropogation
-		- ![image.png](../assets/image_1726683989836_0.png)
-		- Error
-			- ![image.png](../assets/image_1726684298440_0.png){:height 160, :width 421}
-		- ![image.png](../assets/image_1726685745496_0.png)
+		- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+		- ### Backpropogation
+			- ![image.png](../assets/image_1726683989836_0.png)
+			- Error
+				- ![image.png](../assets/image_1726684298440_0.png){:height 160, :width 421}
+			- ![image.png](../assets/image_1726685745496_0.png)
+			-
 		-
-	-
