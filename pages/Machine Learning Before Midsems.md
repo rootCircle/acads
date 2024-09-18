@@ -1,0 +1,8 @@
+- Covariance matrix /Eigen vector/matrix
+	- ![image.png](../assets/image_1726673748216_0.png)
+	- ![image.png](../assets/image_1726674151969_0.png){:height 414, :width 570}
+	- Recall = True-Positive/Actual Yes
+	- Precision = True-Positive/Predicted-Yes
+	- Type I -> False Positive
+	- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+	-
