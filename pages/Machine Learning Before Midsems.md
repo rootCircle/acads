@@ -5,4 +5,10 @@
 	- Precision = True-Positive/Predicted-Yes
 	- Type I -> False Positive
 	- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+	- ### Backpropogation
+		- ![image.png](../assets/image_1726683989836_0.png)
+		- Error
+			- ![image.png](../assets/image_1726684298440_0.png){:height 160, :width 421}
+		- ![image.png](../assets/image_1726685745496_0.png)
+		-
 	-
