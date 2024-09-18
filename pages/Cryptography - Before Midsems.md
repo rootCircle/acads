@@ -149,7 +149,7 @@
 		  56-bit key length
 		  16 rounds
 		  48-bit of key used in each round
-		- ![image.png](../assets/image_1726503056053_0.png){:height 353, :width 319}
+		- ![image.png](../assets/image_1726503056053_0.png){:height 357, :width 319}
 		- ![image.png](../assets/image_1726493304360_0.png){:height 430, :width 742}
 			- Left Shift is 1 for i =1, 2, 9, 16 and 2 for other rounds
 		- *Appendix:* Initial & Inverse Initial Permutation
@@ -160,7 +160,6 @@
 			- ![image.png](../assets/image_1726502210078_0.png){:height 214, :width 405}
 		- S Box (101101) => First and last bit represent row, rest are column in S box
 		- *Decryption*
-		  collapsed:: true
 			- ![image.png](../assets/image_1726496699376_0.png){:height 326, :width 274}
 		- ![image.png](../assets/image_1726510926113_0.png)
 		- Weak Key
@@ -196,7 +195,7 @@
 	- #### Counter (CTR)
 		- ![image.png](../assets/image_1726572444821_0.png){:height 221, :width 367}
 	- ### GCM
-		- $g(x) = x^128 + x^7 + x^2 + x + 1$
+		- $g(x) = x^{128} + x^7 + x^2 + x + 1$
 		- ![image.png](../assets/image_1726575295633_0.png){:height 337, :width 350}
 	- ### XTS-AES
 		- ![image.png](../assets/image_1726575174561_0.png){:height 268, :width 402}
@@ -213,7 +212,7 @@
 	- ### PRBG Generators
 		- #### Linear Congruential Generator
 			- $x_{n}\equiv ax_{n-1}+b\ mod\ m$
-			- iff
+			- generates iff
 				- gcd(b, m) = 1,
 				- if p | m, then p | (a − 1) for all prime factor p of m,
 				- if 4 | m, then 4 | (a − 1)
