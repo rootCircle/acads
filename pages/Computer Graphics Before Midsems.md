@@ -4,5 +4,22 @@
 	- ![image.png](../assets/image_1726775423012_0.png)
 	- ![image.png](../assets/image_1726773700325_0.png){:height 435, :width 284}
 	- ![image.png](../assets/image_1726775553473_0.png){:height 358, :width 662}
+- ### Midpoint circle
+	- If pk < 0 => yk else yk-1
+	- ![image.png](../assets/image_1726780822949_0.png)
+	- ![image.png](../assets/image_1726781157765_0.png)
+	- repeat till x >= y
+- ### Ellipse
+	- ![image.png](../assets/image_1726782341970_0.png){:height 173, :width 418}
+	- ![image.png](../assets/image_1726782699537_0.png){:height 228, :width 417}
+		- rx ry is a & b respectively
+	- ![image.png](../assets/image_1726783457464_0.png)
+	- D < 0 => yp else yp-1
+	- ![image.png](../assets/image_1726784343329_0.png)
+	- ![image.png](../assets/image_1726784775131_0.png)
+	- ![image.png](../assets/image_1726784826067_0.png)
+- ### Polygon
+	- The point is considered to be **interior** if the number of intersections between the line and the polygon edges is **odd**
+	- Scan fill -> fill between intersection
 	-
 	-
