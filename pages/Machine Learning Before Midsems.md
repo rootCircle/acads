@@ -3,15 +3,34 @@
 	- Covariance matrix /Eigen vector/matrix
 		- ![image.png](../assets/image_1726673748216_0.png)
 		- ![image.png](../assets/image_1726674151969_0.png){:height 296, :width 406}
+	- Covariance -> |$C-\lambda I$| = 0 -> CV = $\lambda$V (where V is eigen vector= [x1 y1]) -> assume y1 = 1 and find x1 -> y1 = $$y1/\sqrt{x^2+y^2}$$ & x1 = $$x1/\sqrt{x^2+y^2}$$
+- ### Categorical Data
+	- One hot encoding -> Dummy encoding(eliminate 1st/last feature) -> Effect Coding scheme(-1 if all are 0)
+- ### Keywords
+	- Outliers: Extremities
+	- Multi-collinearity: Independent variable are co-related
+	- Sigmoid
+		- $1/(1+e^{-x})$
+		- Logit R -> have a cutoff at 0.5
+- ### Linear Regression
+	- ![image.png](../assets/image_1726701262861_0.png)
+	- y = bx + a
 - ### Recall / Precision
 	- Recall = True-Positive/Actual Yes
 	- Precision = True-Positive/Predicted-Yes
 	- Type I -> False Positive
 		- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
-		- ### Backpropogation
-			- ![image.png](../assets/image_1726683989836_0.png)
-			- Error
-				- ![image.png](../assets/image_1726684298440_0.png){:height 160, :width 421}
-			- ![image.png](../assets/image_1726685745496_0.png)
-			-
+- ### Support Vector Machines
+	- ![image.png](../assets/image_1726703190452_0.png)
+	- Marginal plane should be max separated and equidistant from best fit line
+	- ![image.png](../assets/image_1726703413595_0.png){:height 319, :width 342}
+	- Cost function: Maximise 2/|w|
+	- Loss function: MInimise |w|/2
+		- ![image.png](../assets/image_1726704185828_0.png){:height 257, :width 472}
+	- #### Regression
+		- ![image.png](../assets/image_1726704259886_0.png){:height 201, :width 488}
+		- ![image.png](../assets/image_1726704537556_0.png){:height 107, :width 478}
+	- SVM Kernel -> add dimension to reduce confusion
+		- ![image.png](../assets/image_1726704736143_0.png)
 		-
+	-
