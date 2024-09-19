@@ -32,5 +32,9 @@
 		- ![image.png](../assets/image_1726704537556_0.png){:height 107, :width 478}
 	- SVM Kernel -> add dimension to reduce confusion
 		- ![image.png](../assets/image_1726704736143_0.png)
-		-
+- ### KNN
+	- ![image.png](../assets/image_1726706869373_0.png){:height 163, :width 542}
+- ### Decision tree
+	- ![image.png](../assets/image_1726707311541_0.png){:height 291, :width 745}
+	-
 	-
