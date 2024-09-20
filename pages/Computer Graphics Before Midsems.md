@@ -20,6 +20,15 @@
 	- ![image.png](../assets/image_1726784826067_0.png)
 - ### Polygon
 	- The point is considered to be **interior** if the number of intersections between the line and the polygon edges is **odd**
-	- Scan fill -> fill between intersection
-	-
+	- #### Scan fill -> fill between intersection
+		- ![image.png](../assets/image_1726785724050_0.png)
+			- yi+1 = yi + 1
+		- ![image.png](../assets/image_1726785944565_0.png)
+	- #### Boundary fill
+		- fill till boundary
+		- 4 connected or 8 connected is stored in stack and popped and filled
+	- #### Flood fill
+		- keep neighbour span tip on stack instead of connected
+- ### Beizer Curve
+	- ![image.png](../assets/image_1726793612346_0.png)
 	-
