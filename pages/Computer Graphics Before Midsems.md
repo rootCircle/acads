@@ -10,10 +10,10 @@
 	- ![image.png](../assets/image_1726781157765_0.png)
 	- repeat till x >= y
 - ### Ellipse
-	- ![image.png](../assets/image_1726782341970_0.png){:height 173, :width 418}
-	- ![image.png](../assets/image_1726782699537_0.png){:height 228, :width 417}
+	- ![image.png](../assets/image_1726782341970_0.png){:height 119, :width 278}
+	- ![image.png](../assets/image_1726782699537_0.png){:height 184, :width 328}
 		- rx ry is a & b respectively
-	- ![image.png](../assets/image_1726783457464_0.png)
+	- ![image.png](../assets/image_1726783457464_0.png){:height 181, :width 337}
 	- D < 0 => yp else yp-1
 	- ![image.png](../assets/image_1726784343329_0.png)
 	- ![image.png](../assets/image_1726784775131_0.png)
