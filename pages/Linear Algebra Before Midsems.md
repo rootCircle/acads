@@ -29,7 +29,7 @@
 	- Ax=b
 	- Augmented Matrix
 	- Make **UPPER TRIANGULAR MATRIX** from pivot(below) from row operations & then perform back substitution.
-	- Permanent
+	- Breakdown: Permanent -> all 0, row interchange won't fix; temporary -> pivot = 0 fix by row interchange
 	- ### Allowed operation
 		- Ri -> k Ri
 		- Ri -> k Ri + p Rj
