@@ -1,4 +1,5 @@
 - 🎉Resource: https://drive.google.com/file/d/14IyPS59B-s6o-bE42CcfSnKxgzqfokEN/view
+- ![image.png](../assets/image_1727000900172_0.png)
 - ## Intro
 	- ### Transpose
 		- $(A+B)^T=A^T+B^T$
@@ -11,6 +12,7 @@
 		- ![image.png](../assets/image_1726957695986_0.png){:height 267, :width 504}
 		- norm = ||u|| = magnitude of vector
 	- ### Inverse
+		- Non singular matrix $|A| \ne 0$
 		- $(AB)^{-1}=B^{-1}A^{-1}$
 		- $(A^T)^{-1} = (A^{-1})^T$
 		- $A^{-1}=\frac{1}{ad-bc}$ adj(A)
@@ -27,11 +29,22 @@
 	- Ax=b
 	- Augmented Matrix
 	- Make **UPPER TRIANGULAR MATRIX** from pivot(below) from row operations & then perform back substitution.
+	- Permanent
 	- ### Allowed operation
 		- Ri -> k Ri
 		- Ri -> k Ri + p Rj
 		- Ri <-> Rj
 	- ### Reduced Row echelon form
-		- Make number below and above pivot zero and make pivot element 1
+		- Make number below and above pivot zero and _make pivot element 1_
 		- ![image.png](../assets/image_1726996019904_0.png){:height 326, :width 613}
-		-
+		- #### Computing Inverse using Reduced Row echelon form
+			- ![image.png](../assets/image_1726996720900_0.png){:height 292, :width 367}
+	- ### Elementary Matrix
+		- M3M2M1A = U
+		- ![image.png](../assets/image_1726999312223_0.png){:height 198, :width 376}
+	- ### LU Decomposition
+		- ![image.png](../assets/image_1726999704088_0.png){:height 291, :width 498}
+		- #### (LU)x = b
+			- ![image.png](../assets/image_1727000527352_0.png){:height 305, :width 583}
+	-
+-
