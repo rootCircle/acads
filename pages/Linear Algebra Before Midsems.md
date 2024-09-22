@@ -1,0 +1,37 @@
+- 🎉Resource: https://drive.google.com/file/d/14IyPS59B-s6o-bE42CcfSnKxgzqfokEN/view
+- ## Intro
+	- ### Transpose
+		- $(A+B)^T=A^T+B^T$
+		- $(AB)^T=B^TA^T$
+		- Symmetric Matrix
+			- $A^{T}=A$
+		- Skew symmetric
+			- $A^{T}=-A$
+	- ### Inner(dot product) and Outer Product
+		- ![image.png](../assets/image_1726957695986_0.png){:height 267, :width 504}
+		- norm = ||u|| = magnitude of vector
+	- ### Inverse
+		- $(AB)^{-1}=B^{-1}A^{-1}$
+		- $(A^T)^{-1} = (A^{-1})^T$
+		- $A^{-1}=\frac{1}{ad-bc}$ adj(A)
+		- adj(A) = $$C_{ij}$$
+			- $C_{ij}=\left(-1\right)^{i+j}M_{ij}$ where $$M_{ij}=\det\left(A\right)$$ leaving i, j row and col aside
+	- ### Orthogonal Matrix
+		- $Q^{-1}=Q^T$
+		- $QQ^T=I$
+	- ### Permutation Matrix
+		- Identity matrix with row/column permuted
+		- ![image.png](../assets/image_1726994674294_0.png)
+- ## Gaussian elimination
+	- ![image.png](../assets/image_1726995240411_0.png){:height 311, :width 540}
+	- Ax=b
+	- Augmented Matrix
+	- Make **UPPER TRIANGULAR MATRIX** from pivot(below) from row operations & then perform back substitution.
+	- ### Allowed operation
+		- Ri -> k Ri
+		- Ri -> k Ri + p Rj
+		- Ri <-> Rj
+	- ### Reduced Row echelon form
+		- Make number below and above pivot zero and make pivot element 1
+		- ![image.png](../assets/image_1726996019904_0.png){:height 326, :width 613}
+		-

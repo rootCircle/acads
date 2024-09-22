@@ -1,4 +1,5 @@
 - [[Cryptography]]
 - [[Machine Learning]]
 - [[Computer Graphics]]
+- [[Linear Algebra]]
 -
