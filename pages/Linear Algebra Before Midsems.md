@@ -18,12 +18,14 @@
 		- $A^{-1}=\frac{1}{ad-bc}$ adj(A)
 		- adj(A) = $$C_{ij}$$
 			- $C_{ij}=\left(-1\right)^{i+j}M_{ij}$ where $$M_{ij}=\det\left(A\right)$$ leaving i, j row and col aside
+	- ### Rotation Matrix
+		- ![image.png](../assets/image_1727017923040_0.png){:height 186, :width 376}
 	- ### Orthogonal Matrix
 		- $Q^{-1}=Q^T$
 		- $QQ^T=I$
 	- ### Permutation Matrix
 		- Identity matrix with row/column permuted
-		- ![image.png](../assets/image_1726994674294_0.png)
+		- ![image.png](../assets/image_1726994674294_0.png){:height 201, :width 387}
 - ## Gaussian elimination
 	- ![image.png](../assets/image_1726995240411_0.png){:height 311, :width 540}
 	- Ax=b
@@ -39,12 +41,13 @@
 		- ![image.png](../assets/image_1726996019904_0.png){:height 326, :width 613}
 		- #### Computing Inverse using Reduced Row echelon form
 			- ![image.png](../assets/image_1726996720900_0.png){:height 292, :width 367}
-	- ### Elementary Matrix
+	- ### Elementary/Elimination Matrix
 		- M3M2M1A = U
 		- ![image.png](../assets/image_1726999312223_0.png){:height 198, :width 376}
 	- ### LU Decomposition
 		- ![image.png](../assets/image_1726999704088_0.png){:height 291, :width 498}
 		- #### (LU)x = b
 			- ![image.png](../assets/image_1727000527352_0.png){:height 305, :width 583}
-	-
+	- ### triple factorizations LDU
+		- D = Diag
 -
