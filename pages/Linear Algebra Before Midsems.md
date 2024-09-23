@@ -70,9 +70,11 @@
 		- Mij -> (-1)^(i+j) -> Transpose -> adj A
 		- ![image.png](../assets/image_1727050452663_0.png)
 - ## Eigen value and eigen vector
-	- $AX = \lambda X$ or $$
-	- $|A - \lambda X| = 0$
+	- $AX = \lambda X$ or $(A-\lambda I)X= 0$
+	- $|A - \lambda I| = 0$
 	- n order polynomial
 	- Trace = sum of diag
 	- $\lambda$ is eigen value, X is eigen vector
--
+	- X = Column vector
+	- ![image.png](../assets/image_1727053698730_0.png)
+	-
