@@ -31,7 +31,7 @@
 	- Ax=b
 	- Augmented Matrix
 	- Make **UPPER TRIANGULAR MATRIX** from pivot(below) from row operations & then perform back substitution.
-	- Breakdown: Permanent -> all 0, row interchange won't fix; temporary -> pivot = 0 fix by row interchange
+	- {}Breakdown: Permanent -> all 0, row interchange won't fix; temporary -> pivot = 0 fix by row interchange
 	- ### Allowed operation
 		- Ri -> k Ri
 		- Ri -> k Ri + p Rj
@@ -66,5 +66,13 @@
 		- Equate row = 0
 		- ![image.png](../assets/image_1727029350230_0.png){:height 366, :width 661}
 		- ![image.png](../assets/image_1727029906731_0.png){:height 341, :width 637}
-		-
+		- ![image.png](../assets/image_1727048821431_0.png)
+		- Mij -> (-1)^(i+j) -> Transpose -> adj A
+		- ![image.png](../assets/image_1727050452663_0.png)
+- ## Eigen value and eigen vector
+	- $AX = \lambda X$ or $$
+	- $|A - \lambda X| = 0$
+	- n order polynomial
+	- Trace = sum of diag
+	- $\lambda$ is eigen value, X is eigen vector
 -
