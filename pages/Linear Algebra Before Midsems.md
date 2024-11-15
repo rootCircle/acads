@@ -16,8 +16,8 @@
 		- $(AB)^{-1}=B^{-1}A^{-1}$
 		- $(A^T)^{-1} = (A^{-1})^T$
 		- $A^{-1}=\frac{1}{ad-bc}$ adj(A)
-		- adj(A) = $$C_{ij}$$
-			- $C_{ij}=\left(-1\right)^{i+j}M_{ij}$ where $$M_{ij}=\det\left(A\right)$$ leaving i, j row and col aside
+		- adj(A) = $$C_{ij}^T$$
+			- $c_{ij}=\left(-1\right)^{i+j}M_{ij}$ where $$M_{ij}=\det\left(A\right)$$ leaving i, j row and col aside
 	- ### Rotation Matrix
 		- ![image.png](../assets/image_1727017923040_0.png){:height 186, :width 376}
 	- ### Orthogonal Matrix
@@ -66,7 +66,7 @@
 		- Equate row = 0
 		- ![image.png](../assets/image_1727029350230_0.png){:height 366, :width 661}
 		- ![image.png](../assets/image_1727029906731_0.png){:height 341, :width 637}
-		- ![image.png](../assets/image_1727048821431_0.png)
+		- ![image.png](../assets/image_1727048821431_0.png){:height 483, :width 837}
 		- Mij -> (-1)^(i+j) -> Transpose -> adj A
 		- ![image.png](../assets/image_1727050452663_0.png)
 - ## Eigen value and eigen vector
