@@ -31,7 +31,7 @@
 	- Ax=b
 	- Augmented Matrix
 	- Make **UPPER TRIANGULAR MATRIX** from pivot(below) from row operations & then perform back substitution.
-	- {}Breakdown: Permanent -> all 0, row interchange won't fix; temporary -> pivot = 0 fix by row interchange
+	- Breakdown: Permanent -> all pivot 0, row interchange won't fix; temporary -> pivot = 0 fix by row interchange
 	- ### Allowed operation
 		- Ri -> k Ri
 		- Ri -> k Ri + p Rj
@@ -45,6 +45,7 @@
 		- M3M2M1A = U
 		- ![image.png](../assets/image_1726999312223_0.png){:height 198, :width 376}
 	- ### LU Decomposition
+		- $E_{21} = M_1$ here (as $R_2 +x R_1$)
 		- ![image.png](../assets/image_1726999704088_0.png){:height 291, :width 498}
 		- #### (LU)x = b
 			- ![image.png](../assets/image_1727000527352_0.png){:height 305, :width 583}
