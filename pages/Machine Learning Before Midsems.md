@@ -13,32 +13,50 @@
 	- #### Embedded Method - Decision Tree
 		- Don't suffer from over-fitting like in wrapper
 - ### Classifier
+	- Gives possibility (+1/-1) and _probability_(used in tie breaker for positives) of a class(target value) from feature
+	- ![image.png](../assets/image_1731839209147_0.png)
 	- One vs All
 		- No. of classifier = no. of class
 	- One vs one
+		- Combination of Pair of class
 		- No of classifier = n(n-1)/2 where n=no. of class
 - ### Principle Component Analysis
 	- Reduce dimension by changing POV
+	- Principle Component should be independent of each other (orthogonal) and priority in order (PC1 > PC2 ......)
 	- Covariance matrix /Eigen vector/matrix
 		- ![image.png](../assets/image_1726673748216_0.png)
 		- ![image.png](../assets/image_1726674151969_0.png){:height 296, :width 406}
 	- Covariance -> |$C-\lambda I$| = 0 -> CV = $\lambda$V (where V is eigen vector= [x1 y1]) -> assume y1 = 1 and find x1 -> y1 = $$y1/\sqrt{x^2+y^2}$$ & x1 = $$x1/\sqrt{x^2+y^2}$$
+- ### Confusion Matrix
+	- Pred X vs Actual Y NO, YES
+	- Recall = True-Positive/Actual Yes
+	- Precision = True-Positive/Predicted-Yes
+	- Accuracy = Correct Prediction/Total
+	- Error = 1 - Accuracy
+	- Type I -> False Positive
+	- Type II error -> False Negative
+- ### Curse of dimensionality
+	- Threshold after which accuracy start to decrease
+- ### Managing missing record
+	- Remove record
+	- Create sub-model (if feature A is missing, then make a sub-model with A as target variable)
+	- Mean, Median, Mode
 - ### Categorical Data
-	- One hot encoding -> Dummy encoding(eliminate 1st/last feature) -> Effect Coding scheme(-1 if all are 0)
+	- One hot encoding(all in 1 & 0) -> Dummy encoding(eliminate 1st or last feature) -> Effect Coding scheme(-1 if all are 0)
 - ### Keywords
-	- Outliers: Extremities
+	- Outliers: Extremities (less effective features on target)
 	- Multi-collinearity: Independent variable are co-related
 	- Sigmoid
 		- $1/(1+e^{-x})$
 		- Logit R -> have a cutoff at 0.5
 - ### Linear Regression
+	- Continuous linear relationship
 	- ![image.png](../assets/image_1726701262861_0.png)
-	- y = bx + a
-- ### Recall / Precision
-	- Recall = True-Positive/Actual Yes
-	- Precision = True-Positive/Predicted-Yes
-	- Type I -> False Positive
-		- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+	- y = bx + a (or more x -> multiple linear Reg)
+- ### Logistic Regression
+	- Dependent variable is binary (true or false, 0 or 1)
+	- Uses porbability
+- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
 - ### Support Vector Machines
 	- ![image.png](../assets/image_1726703190452_0.png)
 	- Marginal plane should be max separated and equidistant from best fit line
