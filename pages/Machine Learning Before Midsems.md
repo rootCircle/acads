@@ -1,4 +1,23 @@
-### Principle Component Analysis
+- Machine Learning: Input Data -> Program
+- Train -> Data + Target Attribute
+- Test -> Actual Value : Predicted Value
+- Over-fitting: Too many features
+- Under-fitting: Very less features
+- ### Feature Selection Methods
+	- #### Filter Method - Coorelation coefficient
+		- If a feature and target variable are related, else remove them
+	- #### Wrapper Method
+		- ##### Recursive feature elimination
+			- Try all permutations, and then eliminate with highest accuracy
+			- Expensive to calculate
+	- #### Embedded Method - Decision Tree
+		- Don't suffer from over-fitting like in wrapper
+- ### Classifier
+	- One vs All
+		- No. of classifier = no. of class
+	- One vs one
+		- No of classifier = n(n-1)/2 where n=no. of class
+- ### Principle Component Analysis
 	- Reduce dimension by changing POV
 	- Covariance matrix /Eigen vector/matrix
 		- ![image.png](../assets/image_1726673748216_0.png)
