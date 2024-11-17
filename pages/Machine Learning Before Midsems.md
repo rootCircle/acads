@@ -43,20 +43,26 @@
 	- Mean, Median, Mode
 - ### Categorical Data
 	- One hot encoding(all in 1 & 0) -> Dummy encoding(eliminate 1st or last feature) -> Effect Coding scheme(-1 if all are 0)
-- ### Keywords
+- ### Regression Classification
 	- Outliers: Extremities (less effective features on target)
 	- Multi-collinearity: Independent variable are co-related
-	- Sigmoid
-		- $1/(1+e^{-x})$
-		- Logit R -> have a cutoff at 0.5
-- ### Linear Regression
-	- Continuous linear relationship
-	- ![image.png](../assets/image_1726701262861_0.png)
-	- y = bx + a (or more x -> multiple linear Reg)
-- ### Logistic Regression
-	- Dependent variable is binary (true or false, 0 or 1)
-	- Uses porbability
-- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+	- #### Linear Regression
+		- Continuous linear relationship
+		- ![image.png](../assets/image_1726701262861_0.png)
+		- y = bx + a (or more x -> multiple linear Reg) [a,b are regression coeff]
+	- #### Logistic Regression
+		- Dependent variable is binary (true or false, 0 or 1)
+		- Uses probability
+		- Sigmoid
+			- $1/(1+e^{-x})$
+			- Logit R -> have a cutoff at 0.5
+- ### Naive Bayes Classifier
+	- ![image.png](../assets/image_1726680767344_0.png){:height 218, :width 541}
+	- Feature set F = {$y_1, y_2, y_3$}, then find $x_i(\in X)$ $\ni$ $P(F|x_i) = P(y_1|x_i) P(y_2|x_i) P(y_3|x_i)$ is maximum
+	- Variants (Not in syllabus)
+	  collapsed:: true
+		- ![image.png](../assets/image_1731861174617_0.png){:height 413, :width 565}
+		- Gaussian - continuous feature value
 - ### Support Vector Machines
 	- ![image.png](../assets/image_1726703190452_0.png)
 	- Marginal plane should be max separated and equidistant from best fit line
@@ -67,7 +73,7 @@
 	- #### Regression
 		- ![image.png](../assets/image_1726704259886_0.png){:height 201, :width 488}
 		- ![image.png](../assets/image_1726704537556_0.png){:height 107, :width 478}
-	- SVM Kernel -> add dimension to reduce confusion
+	- SVM Kernel -> add dimension to reduce confusion (can't classify in hyperplane can be be classified in higher dimension)
 		- ![image.png](../assets/image_1726704736143_0.png)
 - ### KNN
 	- ![image.png](../assets/image_1726706869373_0.png){:height 163, :width 542}
