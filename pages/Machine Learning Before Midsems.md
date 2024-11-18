@@ -79,5 +79,10 @@
 	- ![image.png](../assets/image_1726706869373_0.png){:height 163, :width 542}
 - ### Decision tree
 	- ![image.png](../assets/image_1726707311541_0.png){:height 291, :width 745}
+	- Make tree by order of Gain (Feature) [highest first]
+- ### DBSCAN
+	- Density based
+	- \epsilon radius circle must have atleast 3 three point within => core
+	- if a circle from point contain
 	-
 	-
