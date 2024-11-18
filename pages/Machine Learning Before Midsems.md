@@ -82,7 +82,22 @@
 	- Make tree by order of Gain (Feature) [highest first]
 - ### DBSCAN
 	- Density based
-	- \epsilon radius circle must have atleast 3 three point within => core
-	- if a circle from point contain
-	-
-	-
+	- \epsilon radius circle must have atleast 3 three point within => centre = core point
+	- if a circle from point contain core point (but point \ne core point), then point is boundary point -> considered in same cluster
+	- if none of both then noise point (outliers)
+- ### K means algorithm
+	- Take two points as centroid
+	- Calculate euclidean distance for third point from both centroid
+	- Take smaller distance as criteria for cluster
+	- Recalculate centroid of cluster = midpoint(old_centroid, new_point) other centroid remains same
+- ### Hierarchical Clustering
+	- #### Divisive
+		- ABCDE => (AB) (CDE) => (A) (B) (CD) (E) => A B C D E
+	- #### Agglomerative
+		- Opposite of divisive, cluster and fuse
+		- ##### Simple linkage
+			- Take min of distance from distance matrix and fuse point (eg P23 is smallest then fuse 2,3 and then recalculate distance matrix with P23 as new member)
+				- The smallest (here 2,3) will form a cluster at distance d, represented on dendogram
+				- The distance of Pk from P23 will be dist(Pk, P23) = min{dist(Pk, P2), dist(Pk, P3)}
+		- ##### Complete Linkage
+			- Same as simple linkage but here distance dist(Pk, P23) = max{dist(Pk,P2), dist(Pk, P3)}
