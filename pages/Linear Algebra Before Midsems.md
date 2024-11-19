@@ -25,6 +25,7 @@
 		- $QQ^T=I$
 	- ### Permutation Matrix
 		- Identity matrix with row/column permuted
+		- Perform Same op (as on original matrix in Gaussian elimination) to Identity matrix to get permutation matrix.
 		- ![image.png](../assets/image_1726994674294_0.png){:height 201, :width 387}
 - ## Gaussian elimination
 	- ![image.png](../assets/image_1726995240411_0.png){:height 311, :width 540}
@@ -51,6 +52,7 @@
 			- ![image.png](../assets/image_1727000527352_0.png){:height 305, :width 583}
 	- ### triple factorizations LDU
 		- D = Diagonal matrix
+		- A=LDU, here D is diagonal (matrix) with element of U and U diagonal become all 1s
 - ## Vector Space
 	- set of vector(_column matrices_) + set of scalar & is closed under +, *
 	- Null space | Column space | Row space | Left null space
