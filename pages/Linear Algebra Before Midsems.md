@@ -60,11 +60,11 @@
 		- c1u1 + c2u2 + ... = 0 has only solution c1=c2=...=0
 		- No vector in set can be written as linear combination of other vector
 	- ![image.png](../assets/image_1727024011950_0.png){:height 324, :width 602}
-		-
+		- Prefer orthonormal basis
 	- ![image.png](../assets/image_1727026336691_0.png){:height 325, :width 615}
 	- a.b = a * b^T
 	- ### NULL(A)
-		- Vector space (x) for all Ax=0
+		- Vector space (x) such that Ax=0
 		- Find rref(A)
 		- Linear combination of column vector
 		- Equate row = 0
