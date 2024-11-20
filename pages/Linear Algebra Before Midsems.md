@@ -76,7 +76,8 @@
 				- then x = u + v
 		- ![image.png](../assets/image_1727029350230_0.png){:height 366, :width 661}
 	- ### Column Space
-		- Span spanned from matrix x column matrix
+		- Column Space basis: Span spanned from matrix x column matrix
+		- column space = linear combination of (mxn) by (nx1)
 		- _Dimension = # of pivot columns_
 		- ![image.png](../assets/image_1727029906731_0.png){:height 341, :width 637}
 	- ### Row Space
