@@ -65,11 +65,29 @@
 	- a.b = a * b^T
 	- ### NULL(A)
 		- Vector space (x) such that Ax=0
-		- Find rref(A)
-		- Linear combination of column vector
-		- Equate row = 0
+		- Find rref(A) | 0 (augment with 0 column at rightmost) => derive equations
+		- Written in form of linear combination of column vector
+		- Equate constant row = 0 if exists for calculating Null(A) in augmented matrix in rref
+		- _Dimension = # of non-pivot columns_
+		- #### Applications
+			- Fewer equation than unknowns (Ax=b)
+				- u = general vector in Null(A)  found from solving keeping Ax=0 (in terms of some _free variables_)
+				- v be vector that solves Ax=b, can assign some constant value to free variable to make them independent
+				- then x = u + v
 		- ![image.png](../assets/image_1727029350230_0.png){:height 366, :width 661}
+	- ### Column Space
+		- Span spanned from matrix x column matrix
+		- _Dimension = # of pivot columns_
 		- ![image.png](../assets/image_1727029906731_0.png){:height 341, :width 637}
+	- ### Row Space
+		- Col Space($A^T$)
+		- Orthogonal to vector in Null space
+		- _Dimension = # of pivot columns_ = Dimension(column space) = _rank(A)_ = No. of linearly independent rows or column
+		- Dimension(row space) + Dimension(null space) = # of column
+	- ### Left Null Space
+		- Null Space($$A^T$$)
+		- $A^Tx=0$
+	- ### Determinant
 		- ![image.png](../assets/image_1727048821431_0.png){:height 483, :width 837}
 		- Mij -> (-1)^(i+j) -> Transpose -> adj A
 		- ![image.png](../assets/image_1727050452663_0.png)
