@@ -75,7 +75,7 @@
 				- v be vector that solves Ax=b, can assign some constant value to free variable to make them independent
 				- then x = u + v
 		- ![image.png](../assets/image_1727029350230_0.png){:height 366, :width 661}
-			- Non pivot columns gives free variables, while pivot gives pivot variables to corresponding column matrix
+			- Non pivot columns gives free variables, while pivot gives pivot variables to corresponding column matrix`
 	- ### Column Space
 		- Column Space basis: Span spanned from matrix x column matrix
 		- column space = linear combination of (mxn) by (nx1)
