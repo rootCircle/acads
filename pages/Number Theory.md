@@ -37,6 +37,8 @@
 		- Only if both number are relatively co-prime
 		- ![image.png](../assets/image_1714675325084_0.png){:height 189, :width 227}
 		- ### Using extended euclidean algorithm
+			- $AA^{-1} = 1 mod B$
+				- GCD then 1 = something mod B
 			- ![image.png](../assets/image_1714828535080_0.png){:height 245, :width 486}
 			- ![image.png](../assets/image_1714828760651_0.png){:height 183, :width 459}
 - ## Chinese Remainder Theorem
