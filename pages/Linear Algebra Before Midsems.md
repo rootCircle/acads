@@ -99,6 +99,15 @@
 	- n order polynomial
 	- Trace = sum of diag
 	- $\lambda$ is eigen value, X is eigen vector
-	- X = Column vector
+	- X = Column vector (norm = 1 or $X.X^T=1$ such that orthogonal $S^{-1} =S^T=S$)
 	- ![image.png](../assets/image_1727053698730_0.png)
-	-
+	- Recap
+	  collapsed:: true
+		- ![image.png](../assets/image_1732439411961_0.png){:height 324, :width 618}
+- ## Matrix Diagonalization
+	- ![image.png](../assets/image_1732440123202_0.png){:height 264, :width 507}
+	- $AS=S \Lambda$
+		- where S = $(X_1, X_2)$ matrix and $\Lambda$ = diag($\lambda_1, \lambda_2$)
+	- ### Powers of matrix
+		- ![image.png](../assets/image_1732440932122_0.png){:height 209, :width 537}
+		-
