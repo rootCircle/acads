@@ -1,2 +1,3 @@
 - [[Computer Graphics Before Midsems]]
+- [[Computer Graphics After Midsems]]
 -
