@@ -3,7 +3,7 @@
 	- ![image.png](../assets/image_1726774719029_0.png)
 	- ![image.png](../assets/image_1726775423012_0.png)
 	- ![image.png](../assets/image_1726773700325_0.png){:height 435, :width 284}
-	- ![image.png](../assets/image_1726775553473_0.png){:height 358, :width 662}
+	- ![image.png](../assets/image_1726775553473_0.png){:height 405, :width 764}
 - ### Midpoint circle
 	- If pk < 0 => yk else yk-1
 	- ![image.png](../assets/image_1726780822949_0.png)
