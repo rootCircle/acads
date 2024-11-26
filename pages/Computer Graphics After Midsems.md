@@ -17,6 +17,14 @@
 	- ![image.png](../assets/image_1732565902141_0.png){:height 322, :width 601}
 - ### line clipping
 	- ![image.png](../assets/image_1732564149110_0.png){:height 279, :width 512}
-	- ![image.png](../assets/image_1732568155863_0.png){:height 348, :width 653}
-	-
+	- #### Cyrus Beck
+		- 0 <= t < 1
+		- ![image.png](../assets/image_1732568155863_0.png){:height 348, :width 653}
+		- ![image.png](../assets/image_1732585686759_0.png)
+		- Take max ti for leaving and min for leaving(t>0)
+	- #### LIANG BARSKY
+		- ![image.png](../assets/image_1732586345637_0.png){:height 355, :width 638}
+		- ![image.png](../assets/image_1732586315349_0.png){:height 366, :width 634}
+		- ![image.png](../assets/image_1732586731203_0.png){:height 421, :width 627}
+		-
 -
