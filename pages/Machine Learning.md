@@ -1,2 +1,3 @@
 - [[Machine Learning Before Midsems]]
+- docs: https://docs.google.com/document/d/10F3bfpTYPTyrMozQLE7af4cegqRUBVvTRO9AWBENPQk/edit?tab=t.0 (Kota's Notes)
 -
