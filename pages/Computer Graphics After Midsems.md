@@ -14,4 +14,9 @@
 	- ![image.png](../assets/image_1732545880183_0.png){:height 232, :width 427}
 	- ![image.png](../assets/image_1732559366281_0.png){:height 243, :width 476}
 	- ![image.png](../assets/image_1732559299515_0.png){:height 309, :width 582}
+	- ![image.png](../assets/image_1732565902141_0.png){:height 322, :width 601}
+- ### line clipping
+	- ![image.png](../assets/image_1732564149110_0.png){:height 279, :width 512}
+	- ![image.png](../assets/image_1732568155863_0.png){:height 348, :width 653}
+	-
 -
