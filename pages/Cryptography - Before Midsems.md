@@ -171,34 +171,35 @@
 		- #### DESX
 			- ![image.png](../assets/image_1726516353760_0.png)
 			- Keys = 184 bits (approx 118 effective)
-- ### AES
-	- $m(x) = x^8 + x^4 + x^3 + x + 1\ or\ 11B$
-	- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
-	- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
-	- ![image.png](../assets/image_1726525110544_0.png){:height 343, :width 428}
-	- Shift -> 2nd row 1 byte left circular shift and so on
-	- Mix col
-		- ![image.png](../assets/image_1726525403151_0.png)
-	- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
-- ### Mode of Operation
-	- #### Electronic Codebook (ECB)
-		- ![image.png](../assets/image_1726567841157_0.png){:height 224, :width 177}
-	- #### Cipher Block Chaining(CBC)
-		- Initialization Vector `IV`
-		- ![image.png](../assets/image_1726567905068_0.png){:height 217, :width 263}
-	- #### Cipher Feedback (CFB)
-		- ![image.png](../assets/image_1726572254173_0.png){:height 224, :width 434}
-		- Ek = Dk => not for public key encryption
-	- #### Output Feedback (OFB)
-		- ![image.png](../assets/image_1726568997652_0.png){:height 246, :width 400}
-		- synchronous
-	- #### Counter (CTR)
-		- ![image.png](../assets/image_1726572444821_0.png){:height 221, :width 367}
-	- ### GCM
-		- $g(x) = x^{128} + x^7 + x^2 + x + 1$
-		- ![image.png](../assets/image_1726575295633_0.png){:height 337, :width 350}
-	- ### XTS-AES
-		- ![image.png](../assets/image_1726575174561_0.png){:height 268, :width 402}
+	- ### AES
+		- $m(x) = x^8 + x^4 + x^3 + x + 1\ or\ 11B$
+		- ![image.png](../assets/image_1726521602814_0.png){:height 421, :width 422}
+		- ![image.png](../assets/image_1726521638208_0.png){:height 148, :width 530}
+		- ![image.png](../assets/image_1726525110544_0.png){:height 343, :width 428}
+		- Shift -> 2nd row 1 byte left circular shift and so on
+		- Mix col
+			- ![image.png](../assets/image_1726525403151_0.png)
+		- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
+	- ### Mode of Operation
+	  collapsed:: true
+		- #### Electronic Codebook (ECB)
+			- ![image.png](../assets/image_1726567841157_0.png){:height 224, :width 177}
+		- #### Cipher Block Chaining(CBC)
+			- Initialization Vector `IV`
+			- ![image.png](../assets/image_1726567905068_0.png){:height 217, :width 263}
+		- #### Cipher Feedback (CFB)
+			- ![image.png](../assets/image_1726572254173_0.png){:height 224, :width 434}
+			- Ek = Dk => not for public key encryption
+		- #### Output Feedback (OFB)
+			- ![image.png](../assets/image_1726568997652_0.png){:height 246, :width 400}
+			- synchronous
+		- #### Counter (CTR)
+			- ![image.png](../assets/image_1726572444821_0.png){:height 221, :width 367}
+		- ### GCM
+			- $g(x) = x^{128} + x^7 + x^2 + x + 1$
+			- ![image.png](../assets/image_1726575295633_0.png){:height 337, :width 350}
+		- ### XTS-AES
+			- ![image.png](../assets/image_1726575174561_0.png){:height 268, :width 402}
 - ## Stream Cipher
 	- Synchronous: Keystream is generated independently
 		- ![image.png](../assets/image_1726577181788_0.png)
