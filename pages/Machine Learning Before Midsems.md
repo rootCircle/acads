@@ -32,6 +32,7 @@
 	- Recall = True-Positive/Actual Yes
 	- Precision = True-Positive/Predicted-Yes
 	- Accuracy = Correct Prediction/Total
+	- f1 score = Harmonic mean of Precision and Recall
 	- Error = 1 - Accuracy
 	- Type I -> False Positive
 	- Type II error -> False Negative
