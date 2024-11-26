@@ -45,7 +45,7 @@
 	- One hot encoding(all in 1 & 0) -> Dummy encoding(eliminate 1st or last feature) -> Effect Coding scheme(-1 if all are 0)
 - ### Regression Classification
 	- Outliers: Extremities (less effective features on target)
-	- Multi-collinearity: Independent variable are co-related
+	- Multi-colinearity: Independent variable are co-related
 	- #### Linear Regression
 		- Continuous linear relationship
 		- ![image.png](../assets/image_1726701262861_0.png)
