@@ -23,6 +23,7 @@
 			- Distance between two consecutive `z` may give column size.
 		- #### Row: Type in column, read in rows
 		- #### Keyword Column Transposition: Like columnar but uses a key, and reads in 'alphabetical order of letter of keys' unlike left to right!
+			- Empty are replaced by 'x'
 	- ### Shift Cipher
 		- #### Caesar cipher (Shift $\le$ 13; ROT13 => Shift by 13)
 		- #### Affine cipher
@@ -31,7 +32,7 @@
 			- Key space = 26φ(26)
 		- #### Mono-alphabetic cipher: map each character to something else
 			- Frequency analysis attacks
-			- Homophone cipher: Replace each letter with variety of substitute dependent on frequency!
+			- Homophone cipher: Replace each letter with variety of substitute dependent on _frequency_!
 			  logseq.order-list-type:: number
 			- Polygraphic Cipher: Substitution of a group of characters
 			  logseq.order-list-type:: number
@@ -40,7 +41,9 @@
 					- Take key, enter non-repeated letter in 5x5 box, fill remaining with increasing order of alphabet that haven't occurred before!
 					- *I & J in same block*
 					- ![image.png](../assets/image_1726312051911_0.png){:height 174, :width 320}
-					- Cipher is next in same row
+					- Take 2 at a time
+						- if both in same line, then shift right by 1
+						- else, form submatrix and invert it
 			- Poly-alphabetic Cipher
 			  logseq.order-list-type:: number
 				- Vigenére Cipher
