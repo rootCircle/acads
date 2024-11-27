@@ -181,7 +181,6 @@
 			- ![image.png](../assets/image_1726525403151_0.png)
 		- ![image.png](../assets/image_1726526023435_0.png){:height 367, :width 386}
 	- ### Mode of Operation
-	  collapsed:: true
 		- #### Electronic Codebook (ECB)
 			- ![image.png](../assets/image_1726567841157_0.png){:height 224, :width 177}
 		- #### Cipher Block Chaining(CBC)
