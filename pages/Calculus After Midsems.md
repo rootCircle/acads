@@ -1,0 +1,4 @@
+- ![image.png](../assets/image_1732803632562_0.png)
+- ![image.png](../assets/image_1732803648756_0.png)
+- ![image.png](../assets/image_1732804650595_0.png)
+	- =1/2
