@@ -1,0 +1,7 @@
+- ![image.png](../assets/image_1740239847606_0.png){:height 186, :width 536}
+- ![image.png](../assets/image_1740240121740_0.png){:height 261, :width 470}
+- ### BFS
+	- Uninformed, Complete(searches all even in infinite)
+	- Uses FIFO (Queue) to traverse
+	- O(V+E) O($b^d$)
+-
