@@ -1,2 +1,3 @@
 - [[Artificial Intelligence]]
+- [[Techno Entrepreneurship]]
 -
