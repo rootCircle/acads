@@ -4,4 +4,17 @@
 	- Uninformed, Complete(searches all even in infinite)
 	- Uses FIFO (Queue) to traverse
 	- O(V+E) O($b^d$)
+	- Optimal (cost is min)
+- ### DFS
+	- Incomplete (infinite/cycle)
+	- Stack (LIFO)
+	- Non-optimal (cost may not be min)
+	- O(V+E) O($b^d$)
+- ### Bidirectional Search
+	- ![image.png](../assets/image_1740241455698_0.png){:height 265, :width 469}
+- ### 8 bit Puzzle
+	- ![image.png](../assets/image_1740241883697_0.png){:height 274, :width 436}
+- ### Heuristic
+	- Use euclidean, manhattan(|x1-x2| + |y1-y2|), misplaced tiles in 8 bit puzzle
+	- Good solution, reduce time complexity
 -
