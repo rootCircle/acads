@@ -14,7 +14,25 @@
 	- ![image.png](../assets/image_1740241455698_0.png){:height 265, :width 469}
 - ### 8 bit Puzzle
 	- ![image.png](../assets/image_1740241883697_0.png){:height 274, :width 436}
+	- #### Heuristic(Informed Search)
+		- No. of misplaced tiles
 - ### Heuristic
 	- Use euclidean, manhattan(|x1-x2| + |y1-y2|), misplaced tiles in 8 bit puzzle
-	- Good solution, reduce time complexity
--
+	- Good solution, reduce time complexity, not always optimal
+- ### Generate and test
+	- Heuristic, DFS with backtracking
+	- Good generator: Complete, Non-redundant, Informed Search
+	- Generate all state with heuristics and remove state which aren't the solutions
+- ### Best First Search
+	- ![image.png](../assets/image_1740432836468_0.png){:height 361, :width 588}
+	- f-values are not related to cost, but heuristics
+	- sort after each insertion in queue
+- ### Beam Search Algorithm
+	- Care of space complexity by only account for best $\beta$ (beam width) branch node, instead of all
+	- Not complete
+- ### Hill Climbing Algo
+	- $\beta$ = 1
+	- ![image.png](../assets/image_1740435246307_0.png){:height 336, :width 565}
+- ### A* algorithm
+	- ![image.png](../assets/image_1740435794625_0.png){:height 269, :width 520}
+	-
