@@ -35,4 +35,16 @@
 	- ![image.png](../assets/image_1740435246307_0.png){:height 336, :width 565}
 - ### A* algorithm
 	- ![image.png](../assets/image_1740435794625_0.png){:height 269, :width 520}
+	- ![image.png](../assets/image_1740438266856_0.png){:height 306, :width 594}
+- ### AO*
+	- Update heuristic values based on lower values and update it till root level
+	- f(n) is for current node, not path when updating values
+	- ![image.png](../assets/image_1740441626799_0.png){:height 403, :width 403}
+	- It doesn't explore all solution path once it got the solution
+- ### Minimax Algorithm
+	- ![image.png](../assets/image_1740444270401_0.png){:height 308, :width 615}
+	- ![image.png](../assets/image_1740444332377_0.png){:height 387, :width 453}
+- ### Alpha beta pruning
+	- ![image.png](../assets/image_1740445236566_0.png){:height 243, :width 551}
+	-
 	-
