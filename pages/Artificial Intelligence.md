@@ -51,6 +51,10 @@
 	- ![image.png](../assets/image_1740447270926_0.png)
 - ### AI Agents
 	- ![image.png](../assets/image_1740447791265_0.png){:height 372, :width 659}
+		- P: Performance measure
+		- E: Environment
+		- A: Actuators
+		- S: Sensors
 	- ![image.png](../assets/image_1740448745058_0.png){:height 315, :width 527}
 	- ![image.png](../assets/image_1740449088845_0.png){:height 342, :width 576}
 	- ![image.png](../assets/image_1740450848954_0.png){:height 303, :width 542}
