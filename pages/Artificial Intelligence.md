@@ -46,5 +46,12 @@
 	- ![image.png](../assets/image_1740444332377_0.png){:height 387, :width 453}
 - ### Alpha beta pruning
 	- ![image.png](../assets/image_1740445236566_0.png){:height 243, :width 551}
-	-
-	-
+- ### Knowledge Representation
+	- ![image.png](../assets/image_1740446813565_0.png){:height 291, :width 453}
+	- ![image.png](../assets/image_1740447270926_0.png)
+- ### AI Agents
+	- ![image.png](../assets/image_1740447791265_0.png){:height 372, :width 659}
+	- ![image.png](../assets/image_1740448745058_0.png){:height 315, :width 527}
+	- ![image.png](../assets/image_1740449088845_0.png){:height 342, :width 576}
+	- ![image.png](../assets/image_1740450848954_0.png){:height 303, :width 542}
+	- ![image.png](../assets/image_1740451084820_0.png){:height 318, :width 559}
