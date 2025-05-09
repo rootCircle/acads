@@ -46,6 +46,7 @@
 	- ![image.png](../assets/image_1740444332377_0.png){:height 387, :width 453}
 - ### Alpha beta pruning
 	- ![image.png](../assets/image_1740445236566_0.png){:height 243, :width 551}
+	- a >= b else pruning
 - ### Knowledge Representation
 	- ![image.png](../assets/image_1740446813565_0.png){:height 291, :width 453}
 	- ![image.png](../assets/image_1740447270926_0.png)
