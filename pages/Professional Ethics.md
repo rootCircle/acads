@@ -34,4 +34,16 @@
 		- Systems Create Self-Trust
 		- Discipline Equals Kindness
 		- ![image.png](../assets/image_1758525232820_0.png){:height 245, :width 537}
-		-
+- ## Integrity, Honesty, Probity
+	- Probity: Incorruptibility and uprightness in public life
+	- Integrity: Adherence to moral & ethical principles even when unobserved
+- ## Responsibility vs Accountability
+	- Responsibility: Task-focused and action-oriented; The duty to complete a task or role
+	- Accountability: Outcome-focused and results-oriented; The obligation to answer for the outcome; ultimately held by one person
+	- Deal with Free rider & Jealousy
+		- Segregate
+		- Problem Assessment
+		- Sympathy & Empathy
+		- Disciplinary action
+	- 4P: Purpose, Passion, Potential, Preference
+	- Accountability: Pay Attention to Details, Acknowledge Mistakes Openly, Accept feedback, support colleagues
