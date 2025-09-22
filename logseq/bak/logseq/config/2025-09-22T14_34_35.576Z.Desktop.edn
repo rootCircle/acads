@@ -38,7 +38,7 @@
 
  ;; Enable tooltip preview on hover.
  ;; Default value: true
- :ui/enable-tooltip? false
+ :ui/enable-tooltip? true
 
  ;; Display brackets [[]] around page references.
  ;; Default value: true
@@ -292,7 +292,7 @@
  ;;  :journal?        false} ; Default value: false
 
  ;; Favorites to list on the left sidebar
- :favorites ["Fourth Semester" "Third Semester"]
+ :favorites ["seventh semester" "college academics" "fifth semester" "fourth semester" "third semester"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -412,7 +412,7 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :graph/settings {:journal? false
+ :graph/settings {:journal? true
  :excluded-pages? true}
  :publishing/all-pages-public? true
  :editor/preferred-pasting-file? true}

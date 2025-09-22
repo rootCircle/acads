@@ -292,7 +292,7 @@
  ;;  :journal?        false} ; Default value: false
 
  ;; Favorites to list on the left sidebar
- :favorites ["Fourth Semester" "Third Semester"]
+ :favorites ["Sixth Semester" "seventh semester" "fifth semester" "fourth semester" "third semester"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -412,5 +412,7 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :graph/settings {:journal? false
- :excluded-pages? false}}
+ :graph/settings {:journal? true
+ :excluded-pages? true}
+ :publishing/all-pages-public? true
+ :editor/preferred-pasting-file? true}
