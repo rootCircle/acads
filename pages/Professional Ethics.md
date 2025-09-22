@@ -1,0 +1,37 @@
+## Ethics vs Morality
+	- Ethics(External Rulebook): The formal codes and regulations that govern our professional and social conduct.
+	- Morality(Internal Rulebook): The personal values and principles that guide our individual sense of right and wrong.
+	- ![image.png](../assets/image_1758518317625_0.png){:height 150, :width 539}
+	- ![image.png](../assets/image_1758518468025_0.png){:height 320, :width 502}
+- ## Sympathy vs Empathy
+	- Left -> Sympathy; Right -> Empathy
+	- Sympathy: Acknowledge, but maintain emotional distance, offer comfort
+	- Empathy: Stepping into another's shoes and experiencing their emotions alongside them
+		- You create a bridge of understanding, sharing in both the emotional weight and the journey towards healing.
+		- Requires vulnerability and emotional courage
+	- Engineer: Better Teamwork, Improved Communication(complex idea to diverse audience), User-Centred Design & Product Development(Sym - Recognize, Emp - Feel)
+	- ![image.png](../assets/image_1758519980809_0.png)
+	- ![image.png](../assets/image_1758520032883_0.png)
+	- Understanding: Connection, Compassion, Support, Growth, Balance
+- ## Hormones
+	- Cortisol, Dopamine(control instant rewards), Testosterone(Confidence & Focus; gym diet), Oxytocin, Serotonin
+	- Dopamine is about the chase, not the catch. Master the chase, master your motivation.
+	- Oxytocin
+		- Touch, Connection, Eye contact, Acts of service, Gratitude
+	- Serotonin
+		- Faith, Social Skill
+		- Mood, sleep, digestion, and self-worth
+		- Sunlight, celebrate wins, Gratitude
+- ## Goal vs System
+	- ![image.png](../assets/image_1758522642988_0.png){:height 407, :width 464}
+	- Goal
+		- Motivation Fades, Missing Systems, Goals Collapse
+	- System
+		- Small Habits Create Big Change, Systems Work(restart), Daily Rhythm
+		- Design for Chaos, Start Ridiculously Small
+		- Make It Routine, Set Reminder, Chase Religiously, Plann / Do / Check / Act
+		- Patterns Create Calm, Pressure Creates Chaos, fatigue
+		- Systems Create Self-Trust
+		- Discipline Equals Kindness
+		- ![image.png](../assets/image_1758525232820_0.png){:height 245, :width 537}
+		-
