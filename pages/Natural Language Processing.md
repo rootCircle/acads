@@ -69,3 +69,47 @@
 	  logseq.order-list-type:: number
 	- Handling emojis: either remove or demojify.
 	  logseq.order-list-type:: number
+	- *Tokenization*
+	  logseq.order-list-type:: number
+		- Problems: Prefix($10), Suffix(10km), Infix(new-york), Exception(U.S.)
+		  logseq.order-list-type:: number
+		- Sentence Tokenization and Word Tokenization
+		  logseq.order-list-type:: number
+	- Stemming
+	  logseq.order-list-type:: number
+		- Inflection: walk, walking, walked etc
+		- ![image.png](../assets/image_1758570310876_0.png){:height 143, :width 547}
+		- Faster than lemmetization, but non readable to user
+	- Lemmetization
+	  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1758570405263_0.png){:height 197, :width 479}
+- ### Feature Extraction
+	- Corpus: All words
+	- Vocabulary: All unique words
+	- Document: Each data
+	- One hot encoding:
+	  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1758571314757_0.png){:height 116, :width 460}
+		- ![image.png](../assets/image_1758571349461_0.png){:height 196, :width 465}
+		- Cons
+			- Sparsity (lots of 0s) => Overfitting
+			- No fixed size
+			- OOV (out of vocabulary for new input)
+			- No semantic meaning (weight-age to word closer)
+	- Bag of words
+	  logseq.order-list-type:: number
+		- best for text classification
+		- binary = True, for sentiment analysis
+		- ![image.png](../assets/image_1758572679256_0.png){:height 120, :width 622}
+		- order of words, doesn't matter
+		- semantic relationship: vector relationship
+		- Cons
+			- sparsity
+			- OOV
+			- Ordering
+			- negation doesn't create large change
+	- n-grams
+	  logseq.order-list-type:: number
+		- bi-grams
+			- ![image.png](../assets/image_1758573419439_0.png){:height 287, :width 645}
+			-
