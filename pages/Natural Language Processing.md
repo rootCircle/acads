@@ -112,4 +112,64 @@
 	  logseq.order-list-type:: number
 		- bi-grams
 			- ![image.png](../assets/image_1758573419439_0.png){:height 287, :width 645}
-			-
+			- semantic meaning
+	- Tf-Idf
+	  logseq.order-list-type:: number
+		- Give weights to word (more to word in document, but not in corpus)
+		- ![image.png](../assets/image_1758592655641_0.png)
+		- ![image.png](../assets/image_1758592669714_0.png)
+		- TF = Term frequency, IDF = Inverse document frequency
+		- ![image.png](../assets/image_1758593129782_0.png){:height 338, :width 340}
+		- Cons:
+			- Sparsity, OOV, sematics, dimension
+	- Custom features
+	  logseq.order-list-type:: number
+		- Like # of positive words, ratio etc
+- ### Word2Vec
+	- Word embeddings
+		- ![image.png](../assets/image_1758593426248_0.png)
+		- Type: 1. Freq (TfIdf, BoW) 2. Prediction (word2vec)
+	- Capture semantic meaning, low dimension, dense vectors
+	- Using deep learning
+	- Generate custom features, and score based on that
+	- ![image.png](../assets/image_1758594202055_0.png)
+	- ![image.png](../assets/image_1758594100839_0.png)
+	- Types of word2vec
+		- CBOW
+		  logseq.order-list-type:: number
+			- Context window = say 3, 5 etc
+			- Context word as input, target word as output and train
+			- for small data
+			- ![image.png](../assets/image_1758594618855_0.png){:height 252, :width 236}
+			- ![image.png](../assets/image_1758595098906_0.png){:height 273, :width 331}
+				- one hot encoding
+		- Skip-gram
+		  logseq.order-list-type:: number
+			- Reverse the problem of CBOW, input becomes output and vice versa.
+			- ![image.png](../assets/image_1758595265578_0.png)
+			- ![image.png](../assets/image_1758595295747_0.png){:height 222, :width 311}
+			- for large data
+			- Improve word2vec: Increase training data, context window, dimension of vector
+- ### Text classification
+	- Types: Binary(2 class), Multiclass, Multilabel(one can have > 1 class)
+	- Approach
+		- Heuristic
+		  logseq.order-list-type:: number
+		- Using API
+		  logseq.order-list-type:: number
+		- Machine Learning
+		  logseq.order-list-type:: number
+			- BoW/ngrams: Use naive bayes or random forest
+			  logseq.order-list-type:: number
+			- TfIdf
+			  logseq.order-list-type:: number
+			- Word2Vec: Pretrained (if atleast 80% match), or own
+			  logseq.order-list-type:: number
+				- For document vectorization, take mean of vector sum of all words
+		- Deep Learning: RNN , LSTM, CNN etc
+		  logseq.order-list-type:: number
+- ### POS Tagging
+	- Labelling word with appropriate part of speech
+	- Application
+		- Named Entity Recognition: extracting entity like person
+	- Viterbi
