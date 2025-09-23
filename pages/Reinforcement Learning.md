@@ -1,5 +1,51 @@
 - Source: https://www.youtube.com/playlist?list=PLloZa6L2Dthi-baGngFkImaq3jJEPQm6l
-- Prob of current state/reward only depend on last state and action
-- Best suited for Episodic tasks: series of tasks
-- ![image.png](../assets/image_1758652685315_0.png){:height 345, :width 344}
+- ### Introduction
+	- Prob of current state/reward only depend on last state and action
+	- Best suited for Episodic tasks: series of tasks
+	- ![image.png](../assets/image_1758652685315_0.png){:height 345, :width 344}
+	- Agent: Who takes Action(A)
+	- Action: Agent that takes in given state in env. Discrete possible actions(a)
+	- State: Configuration of surrounding in which agent find itself
+	- Reward(r): Immediate feedback given by env
+	- Environment: Action, State -> Reward, Next State
+	- Trajectory: sequence of state/actions
+	- Discount factor(\gamma):
+		- To make future reward worth less than immediate reward
+		- ![image.png](../assets/image_1758662996641_0.png){:height 81, :width 476}
+	- Policy(\pi)
+		- Strategy based on current state
+	- State Value Function(V):
+		- Cumulative discounted reward if start in state s at t=0, follow policy \pi
+		- ![image.png](../assets/image_1758663438876_0.png){:height 90, :width 451}
+	- Action Value Function(Q)
+		- Cumulative discounted reward if start in state s at t=0, and take action a and follow \pi
+		- In action value, $a_0$ is not taken as per policy \pi
+		- ![image.png](../assets/image_1758663578384_0.png){:height 72, :width 456}
+- ## Markov Process
+	- Process: Sequence of states and action taken
+		- Discrete Time Process
+		- Stochastic Process (state/actions are determined randomly)
+	- ### Discrete Time Markov Process
+		- For discrete time, stochastic process (future only depends on present)
+		- ![image.png](../assets/image_1758663866161_0.png)
+		- One Step Transition Probability
+			- matrix M
+				- ![image.png](../assets/image_1758663962245_0.png)
+				- i,j = state
+			- St for row, St+1 for column
+- ## Markov Decision Process
+	- MDP is Markov Process, where states are partly random and other in under control of agent(decision maker)
+	- ![image.png](../assets/image_1758664409098_0.png){:height 61, :width 419}
+	- If we follow a policy $$a_t = \pi(s_t)$$
+		- ![image.png](../assets/image_1758664608526_0.png)
+	- ![image.png](../assets/image_1758664716895_0.png){:height 319, :width 365}
+	- ![image.png](../assets/image_1758664921984_0.png){:height 407, :width 712}
+	- ![image.png](../assets/image_1758664968344_0.png){:height 183, :width 572}
+	- ![image.png](../assets/image_1758665151134_0.png){:height 176, :width 536}
+- ## Bellman Equation
+	- ![image.png](../assets/image_1758665208597_0.png){:height 138, :width 610}
+	-
+-
+-
+-
 -
