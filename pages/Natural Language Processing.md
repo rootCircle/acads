@@ -172,8 +172,12 @@
 	- Labelling word with appropriate part of speech
 	- Application
 		- Named Entity Recognition: extracting entity like person
-	- Viterbi Algorithm: Pick the max one, discard the other,
-		- ![image.png](../assets/image_1758601438060_0.png){:height 208, :width 213}
-		- ![image.png](../assets/image_1758601524817_0.png){:height 197, :width 382}
-		- ![image.png](../assets/image_1758601626917_0.png){:height 186, :width 358}
--
+	- #### HMM (Hidden Markov Model)
+		- Viterbi Algorithm: Pick the max one, discard the other,
+			- ![image.png](../assets/image_1758601438060_0.png){:height 208, :width 213}
+			- ![image.png](../assets/image_1758601524817_0.png){:height 197, :width 382}
+			- ![image.png](../assets/image_1758601626917_0.png){:height 186, :width 358}
+	- Emission Probability:
+	- Transition Probability
+	- ![image.png](../assets/image_1758603791517_0.png){:height 376, :width 929}
+	-
