@@ -1,3 +1,5 @@
+- Source: https://www.youtube.com/playlist?list=PLloZa6L2Dthi-baGngFkImaq3jJEPQm6l
 - Prob of current state/reward only depend on last state and action
-- Eposodic tasks
+- Best suited for Episodic tasks: series of tasks
+- ![image.png](../assets/image_1758652685315_0.png){:height 345, :width 344}
 -

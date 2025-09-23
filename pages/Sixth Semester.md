@@ -1,4 +1,5 @@
 - [[Artificial Intelligence]]
-- [[Techno Entrepreneurship]]
 - [[Artificial Intelligence (After Midsems)]]
+- [[Techno Entrepreneurship]]
+-
 -
