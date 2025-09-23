@@ -1,2 +1,3 @@
 - Prob of current state/reward only depend on last state and action
+- Eposodic tasks
 -
