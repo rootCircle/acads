@@ -39,13 +39,46 @@
 	- If we follow a policy $$a_t = \pi(s_t)$$
 		- ![image.png](../assets/image_1758664608526_0.png)
 	- ![image.png](../assets/image_1758664716895_0.png){:height 319, :width 365}
-	- ![image.png](../assets/image_1758664921984_0.png){:height 407, :width 712}
-	- ![image.png](../assets/image_1758664968344_0.png){:height 183, :width 572}
-	- ![image.png](../assets/image_1758665151134_0.png){:height 176, :width 536}
+	- ![image.png](../assets/image_1758664921984_0.png){:height 240, :width 424}
+	- ![image.png](../assets/image_1758664968344_0.png){:height 136, :width 415}
+	- ![image.png](../assets/image_1758665151134_0.png){:height 137, :width 406}
 - ## Bellman Equation
 	- ![image.png](../assets/image_1758665208597_0.png){:height 138, :width 610}
+	- feasible for finite, small no. of states
+	- ### Bellman Principle of Optimality
+		- Given state, optimal policy only depends on future action/state, not past ones.
+		- We do backtracking
+		- ![image.png](../assets/image_1758666240043_0.png){:height 89, :width 579}
+			- Optimal Value at final state is 0
+- ### Model Based RL algo
+	- Assume model of the environment as MDS (all state, reward, T etc)
+	- Transition Probability: T(s,a,s')
+	- Reward function: r(s,a,s')
+	- Approach
+		- Value Iteration
+			- Choose action that maximizes optimal state value function
+			- ![image.png](../assets/image_1758668286255_0.png){:height 209, :width 416}
+		- Policy Iteration
+			- Better estimate of optimal policy iteratively
+			- Policy eval: calculate state value function
+			- Policy improvement: policy function is improved, by selecting action that maximizes reward
+			- ![image.png](../assets/image_1758668613587_0.png){:height 263, :width 628}
+		-
+- ### Monte Carlo Method
+	- Repeated sampling and probability
+	- Steps
+		- Policy evaluation
+		  logseq.order-list-type:: number
+			- estimate Q value by averaging sample return over time
+		- Policy improvement
+		  logseq.order-list-type:: number
+			- greedy over Q, return s that maximize Q(s,a)
+	- ![image.png](../assets/image_1758670381466_0.png){:height 303, :width 527}
+	- Feasible for games for small no. of state, actions, step
+	- works only for episodic problems
+	- \epsilon Greedy Policy
+		- Exporation = \epsilon
+		- Partial Knowledge = 1 - \epsilon
+		- start with \epsilon -> 1, and bring it closer to 0, when we learn more about env
+		- ![image.png](../assets/image_1758672202357_0.png)
 	-
--
--
--
--
