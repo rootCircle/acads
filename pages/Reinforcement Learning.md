@@ -50,6 +50,10 @@
 		- We do backtracking
 		- ![image.png](../assets/image_1758666240043_0.png){:height 89, :width 579}
 			- Optimal Value at final state is 0
+	- ![image.png](../assets/image_1758696540891_0.png)
+	- ![image.png](../assets/image_1758696589754_0.png)
+	- ![image.png](../assets/image_1758696610157_0.png)
+	-
 - ### Model Based RL algo
 	- Assume model of the environment as MDS (all state, reward, T etc)
 	- Transition Probability: T(s,a,s')
