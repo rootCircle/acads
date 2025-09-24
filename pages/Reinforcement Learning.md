@@ -80,5 +80,22 @@
 		- Exporation = \epsilon
 		- Partial Knowledge = 1 - \epsilon
 		- start with \epsilon -> 1, and bring it closer to 0, when we learn more about env
-		- ![image.png](../assets/image_1758672202357_0.png)
-	-
+		- ![image.png](../assets/image_1758672202357_0.png){:height 119, :width 543}
+	- Off and On Policy
+		- Taking actions using Behaviour policy
+		- Learning actions which are good/bad for a state, and update estimate of Q value: Target Policy
+		- If target != behaviour policy -> off policy (eg: Q learning)
+		- if target same as behaviour policy -> on policy (eg: SARSA)
+- ### Q Learning
+	- Model free based on Temporal Difference(TD) learning
+	- Agent learns from Q values of all state-action pair(Q Table) and updates based on estimated value of value Q, *after taking the action*.
+	- ![image.png](../assets/image_1758673585558_0.png){:height 335, :width 627}
+	- target policy always greedy
+	- behaviour generally: generally \epsilon greedy policy
+	- ![image.png](../assets/image_1758673957046_0.png){:height 133, :width 479}
+	- ![image.png](../assets/image_1758674826264_0.png){:height 95, :width 482}
+- ### SARSA (State Action Reward State Action) Learning
+	- target policy same as behaviour policy
+	- two consecutive state, action pair and immediate reward determine Q value
+	- ![image.png](../assets/image_1758674923213_0.png){:height 88, :width 522}
+- ![image.png](../assets/image_1758674846909_0.png){:height 332, :width 659}
